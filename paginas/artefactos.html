@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artefactos</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./personajes.html">Personajes</a></li>
+          <li><a href="./armas.html">Armas</a></li>
+          <li><a href="./artefactos.html">Artefactos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="titulo2">
+      <h2>Artefactos</h2>
+      <p>
+        Los artefactos son elementos en Genshin Impact que se pueden equipar en
+        los personajes para aumentar sus estadísticas.
+      </p>
+      <p>
+        Hay 5 tipos de artefactos que se pueden equipar: Flor de la vida, Pluma
+        de la Muerte, Arenas del Eon, Cáliz de Eonothem y Tiara de Logos. Solo
+        se puede equipar uno de cada tipo en un personaje a la vez.
+      </p>
+      <p>
+        Todos los artefactos tienen un afijo principal, comúnmente conocido como
+        estadística principal, con hasta 4 afijos menores, comúnmente conocidos
+        como subestadísticas o estadísticas secundarias. Estos afijos pueden
+        aumentar considerablemente la fuerza del personaje en combate. Ciertos
+        tipos de artefactos, como la Flor de la vida y la Pluma de la muerte,
+        solo pueden venir con una estadística principal específica, mientras que
+        otros tipos pueden venir con una de muchas estadísticas principales.
+      </p>
+    </div>
+
+    <div class="grid-container4">
+      <div class="nombre-tabla1">
+        <h3>Estadisticas Principales</h3>
+      </div>
+
+      <div class="tabla-estprin">
+        <table>
+          <tr>
+            <th>Conjunto</th>
+            <th>Estadistica</th>
+            <th>Nivel Max</th>
+          </tr>
+          <tr>
+            <td>Flor</td>
+            <td>Vida</td>
+            <td>4780</td>
+          </tr>
+          <tr>
+            <td>Pluma</td>
+            <td>ATQ</td>
+            <td>311</td>
+          </tr>
+          <tr>
+            <td>Corona</td>
+            <td>Vida%/DEF/ATQ</td>
+            <td>46.6%-58.3%-46.6%</td>
+          </tr>
+          <tr>
+            <td>Caliz</td>
+            <td>Vida%/DEF/ATQ</td>
+            <td>46.6%-58.3%-46.6%</td>
+          </tr>
+          <tr>
+            <td>Reloj</td>
+            <td>Maestria Elemental/Recarga de Energia</td>
+            <td>187-51.8%</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="stats">
+        <select name="estadisticas" id="est">
+          <option value="1">Vida y Vida%</option>
+          <option value="2">Atk y Atk%</option>
+          <option value="3">Def y Def%</option>
+          <option value="4" selected>Maestria Elemental</option>
+          <option value="5">Recarga de Energia</option>
+          <option value="6">Bono Elemental</option>
+          <option value="7">Daño Crit.</option>
+          <option value="8">Prob. Crit.</option>
+        </select>
+      </div>
+
+      <div class="descripcion-stat">
+        <p>
+          La Maestría Elemental es un atributo que aumenta la potencia de las
+          Reacciones elementales creadas por tu personaje. Estas reacciones son
+          Vaporización, Derretido, Sobrecarga, Superconductor, Electrocargado,
+          Quemadura, Rompehielo, Torbellino y Cristalización. La fuerza de la
+          reacción se escala en función de la Maestría Elemental del personaje
+          que aplica el último elemento.
+        </p>
+      </div>
+
+      <div class="nombre-tabla2">
+        <h3>Estadisticas Secundarias</h3>
+      </div>
+
+      <div class="tabla-estsec">
+        <table>
+          <tr>
+            <th>Estadistica</th>
+            <th>3 Estrellas</th>
+            <th>4 Estrellas</th>
+            <th>5 Estrellas</th>
+          </tr>
+          <tr>
+            <td>Vida</td>
+            <td>143</td>
+            <td>239</td>
+            <td>299</td>
+          </tr>
+          <tr>
+            <td>Ataque</td>
+            <td>9</td>
+            <td>16</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>Defensa</td>
+            <td>11</td>
+            <td>19</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>Maestria Elemental</td>
+            <td>14</td>
+            <td>19</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>Recarga de Energia</td>
+            <td>3.5%</td>
+            <td>5.2%</td>
+            <td>6.5%</td>
+          </tr>
+          <tr>
+            <td>Probabilidad Critica</td>
+            <td>2.3%</td>
+            <td>3.1%</td>
+            <td>3.9%</td>
+          </tr>
+          <tr>
+            <td>Daño Critico</td>
+            <td>4.7%</td>
+            <td>6.2%</td>
+            <td>7.8%</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="name-art">
+        <select name="set-artefacto" id="set-art" class="sel">
+          <option value="1" selected>Final del Gladiador</option>
+          <option value="2">Aventurero</option>
+          <option value="3">Afortunado</option>
+          <option value="4">Instructor</option>
+          <option value="5">Berserker</option>
+          <option value="6">Ritual Antiguo de la Nobleza</option>
+          <option value="7">Orquesta del Errante</option>
+        </select>
+      </div>
+
+      <div class="artefacto">
+        <img src="../imagenes/artefacto1.webp" alt="" />
+        <p>2 piezas: ATQ +18%.</p>
+        <p>
+          4 piezas: Aumenta el daño de Ataque Normal en un 35% si el personaje
+          usa una espada ligera, mandoble o lanza.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright 2023 [Gabriel Taboada]</p>
+      <p>tel: +280 4329972</p>
+      <p>email: gabrieltc96@gmail.com</p>
+    </footer>
+  </body>
+</html>
