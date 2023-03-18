@@ -1,0 +1,14 @@
+Version 1:
+Primera Pre Entrega de la pagina
+Contiene conceptos vistos hasta la Clase 4 (CSS+Box Modeling)
+Hasta el dia de la fecha 18/3/2023 se agrego el siguiente contenido:
+
+Todas las paginas:
+Flexbox para header-nav y footer
+Se reordeno el contenido con Grid
+
+Pagina index:
+Se agrego con Bootstrap un carrusel de imagenes
+
+Pagina Contacto:
+Se configuro el footer para que se posicione al final de la página, se deja comentario de lo realizado dentro del css en la seccion de ¨Estilos de la Pagina de Contacto¨ 
