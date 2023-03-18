@@ -12,3 +12,11 @@ Se agrego con Bootstrap un carrusel de imagenes
 
 Pagina Contacto:
 Se configuro el footer para que se posicione al final de la página, se deja comentario de lo realizado dentro del css en la seccion de ¨Estilos de la Pagina de Contacto¨ 
+
+Version 2:
+Segunda Pre Entrega
+Contiene conceptos vistos hasta la Clase 11 (GitHub)
+Hasta el dia de la fecha 18/3/2023 se agrego el siguiente contenido:
+
+Pagina index:
+Corregido el footer
