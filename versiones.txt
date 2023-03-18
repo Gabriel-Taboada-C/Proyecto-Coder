@@ -18,5 +18,10 @@ Segunda Pre Entrega
 Contiene conceptos vistos hasta la Clase 11 (GitHub)
 Hasta el dia de la fecha 18/3/2023 se agrego el siguiente contenido:
 
+Todas las paginas:
+Corregidos los headers y footers
+Agregados efectos (hover) a las imagenes de personajes/armas y a las tablas
+Agregada imagen de fondo
+
 Pagina index:
 Corregido el footer

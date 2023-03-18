@@ -28,6 +28,10 @@ header nav ul li a {
   color: white;
 }
 
+header nav ul li a:hover {
+  color: yellow;
+}
+
 /* Estilos de la Pagina de Inicio */
 
 h1 {
@@ -128,6 +132,10 @@ h2 {
   border-color: black;
   border-style: solid;
   border-radius: 5px;
+}
+
+.opciones img:hover {
+  background-color: rgba(3, 3, 70, 0.507);
 }
 
 .carta-personaje {
@@ -251,10 +259,16 @@ h2 {
   color: white;
 }
 
+/* Aplicado para TODAS las tablas */
+
 td,
 th {
   border: 2px solid black;
   padding: 10px;
+}
+
+tr:hover {
+  background-color: orange;
 }
 
 .refinamiento {
@@ -432,13 +446,9 @@ th {
 }
 
 /* Tanto el body como el footer de la pagina contacto son diferentes ya que la pagina tiene poco contenido, lo pude ver en un video aunque no es la forma mas optima ya que si agrego mas contenido el footer puede quedar mal hubicado. Si es una mala practica lo cambio y lo hago con flexbox o con grid para la proxima entrega. Gracias */
+/* Al agregar un min-height la pagina de contacto me queda mas ancha que el resto de paginas 1879px vs 1865px por lo que el nav se mueve un poco a la derecha, por el momento no se como arreglar esto */
 
 /* Estilo del Footer */
-
-.pie-pagina {
-  width: 100%;
-  height: auto;
-}
 
 footer {
   display: flex;
