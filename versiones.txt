@@ -20,8 +20,16 @@ Hasta el dia de la fecha 18/3/2023 se agrego el siguiente contenido:
 
 Todas las paginas:
 Corregidos los headers y footers
-Agregados efectos (hover) a las imagenes de personajes/armas y a las tablas
+Agregados efectos (hover) a elementos varios (img, tablas, iframe, nav)
 Agregada imagen de fondo
 
 Pagina index:
 Corregido el footer
+
+Pagina Contacto:
+Agregada imagen bennett al html
+Agregados estilos para imagen bennett al css
+
+Carpeta imagenes:
+Se agrego imagen background bennett
+Se elimino imagen constelacion y diluc(repetida)

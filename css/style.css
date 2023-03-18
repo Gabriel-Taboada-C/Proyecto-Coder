@@ -4,6 +4,14 @@
   text-decoration: none;
 }
 
+body {
+  background: url(../imagenes/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /* Estilo del Encabezado */
 
 header nav ul {
@@ -132,10 +140,12 @@ h2 {
   border-color: black;
   border-style: solid;
   border-radius: 5px;
+  box-shadow: 1px 1px blue;
+  background-color: rgba(37, 37, 138, 0.8);
 }
 
 .opciones img:hover {
-  background-color: rgba(3, 3, 70, 0.507);
+  background-color: rgba(16, 7, 54, 0.9);
 }
 
 .carta-personaje {
@@ -180,6 +190,7 @@ h2 {
 .grid-container2 .foto-personaje img {
   height: auto;
   width: 300px;
+  border-radius: 3px;
 }
 
 .grid-container2 .foto-personaje {
@@ -191,6 +202,12 @@ h2 {
   width: 800px;
   height: 400px;
   margin: 10px;
+  border-radius: 3px;
+}
+
+.video-personaje iframe:hover {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .grid-container2 .descripcion-personaje {
@@ -265,6 +282,10 @@ td,
 th {
   border: 2px solid black;
   padding: 10px;
+}
+
+tr {
+  background-color: rgba(250, 235, 215, 0.9);
 }
 
 tr:hover {
@@ -376,10 +397,15 @@ tr:hover {
   max-height: 200px;
   max-width: 600px;
   border: 2px solid black;
-  background-color: rgb(202, 238, 252);
+  border-radius: 5px;
+  background-color: rgba(250, 235, 215, 0.95);
   font-weight: bold;
   grid-row: 2/3;
   grid-column: 2/3;
+}
+
+.descripcion-stat:hover {
+  background-color: rgba(27, 230, 162, 0.8);
 }
 
 .descripcion {
@@ -397,7 +423,11 @@ tr:hover {
   margin-right: 20px;
   border: solid black;
   border-radius: 5px;
-  background-color: rgb(202, 238, 252);
+  background-color: rgba(250, 235, 215, 0.95);
+}
+
+.artefacto img:hover {
+  background-color: rgba(172, 65, 65, 0.95);
 }
 
 .artefacto p {
@@ -434,6 +464,17 @@ tr:hover {
 
 .formulario div {
   margin: 10px;
+}
+
+.bennett img {
+  width: 500px;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 1px 5px 15px 1px black;
+}
+
+.bennett img:hover {
+  box-shadow: 1px 5px 15px 1px red;
 }
 
 .footer-contacto {
