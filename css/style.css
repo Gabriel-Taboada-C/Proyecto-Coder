@@ -44,7 +44,6 @@ header nav ul li a:hover {
 
 h1 {
   font-family: "Gloock", serif;
-  font-size: 70px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -59,6 +58,12 @@ h1 {
   font-size: 25px;
   text-align: center;
   margin: 10px 60px 20px 60px;
+  font-weight: bolder;
+  font-style: italic;
+  border: 4px double black;
+  border-radius: 3px;
+  box-shadow: 3px 3px black;
+  background-color: #8c8312;
 }
 
 #grid-container {
@@ -75,7 +80,7 @@ h1 {
 
 #grid-container .imgin-a {
   margin: 10px;
-  padding: 10px;
+  box-shadow: 5px 5px black;
 }
 
 #grid-container .txtin-a {
@@ -83,11 +88,16 @@ h1 {
   padding: 10px;
   text-indent: 5mm;
   max-width: 600px;
+  font-weight: bold;
+  border: 4px double black;
+  border-radius: 3px;
+  box-shadow: 3px 3px black;
+  background-color: #2ab2dbd2;
 }
 
 #grid-container .imgin-b {
   margin: 10px;
-  padding: 10px;
+  box-shadow: 5px 5px black;
 }
 
 #grid-container .txtin-b {
@@ -95,11 +105,16 @@ h1 {
   padding: 10px;
   text-indent: 5mm;
   max-width: 600px;
+  font-weight: bold;
+  border: 4px double black;
+  border-radius: 3px;
+  box-shadow: 3px 3px black;
+  background-color: #2ab2dbd2;
 }
 
 #grid-container .imgin-c {
   margin: 10px;
-  padding: 10px;
+  box-shadow: 5px 5px black;
 }
 
 #grid-container .txtin-c {
@@ -107,11 +122,16 @@ h1 {
   padding: 10px;
   text-indent: 5mm;
   max-width: 600px;
+  font-weight: bold;
+  border: 4px double black;
+  border-radius: 3px;
+  box-shadow: 3px 3px black;
+  background-color: #2ab2dbd2;
 }
 
 #grid-container .imgin-d {
   margin: 10px;
-  padding: 10px;
+  box-shadow: 5px 5px black;
 }
 
 #grid-container .txtin-d {
@@ -119,6 +139,11 @@ h1 {
   padding: 10px;
   text-indent: 5mm;
   max-width: 600px;
+  font-weight: bold;
+  border: 4px double black;
+  border-radius: 3px;
+  box-shadow: 3px 3px black;
+  background-color: #2ab2dbd2;
 }
 
 /* Estilos de la Pagina de Personajes */
@@ -146,6 +171,7 @@ h2 {
 
 .opciones img:hover {
   background-color: rgba(16, 7, 54, 0.9);
+  box-shadow: 3px 3px black;
 }
 
 .carta-personaje {
@@ -181,7 +207,7 @@ h2 {
 
 .grid-container2 {
   display: grid;
-  grid-template-rows: 1fr 100px;
+  grid-template-rows: 1fr 150px;
   grid-template-columns: 500px 1fr;
   justify-items: center;
   align-items: center;
@@ -218,6 +244,14 @@ h2 {
   text-indent: 5mm;
   grid-row: 2/3;
   grid-column: 2/3;
+}
+
+.descripcion-personaje:hover {
+  background-color: rgba(143, 48, 48, 0.9);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  font-style: oblique;
+  font-weight: bolder;
 }
 
 /* Estilos de la Pagina de Armas */
@@ -261,6 +295,16 @@ h2 {
   text-indent: 5mm;
   grid-row: 2/4;
   grid-column: 1/2;
+}
+
+.descripcion-arma:hover {
+  background-color: rgba(16, 7, 54, 0.9);
+  color: white;
+  max-width: fit-content;
+  max-height: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
 }
 
 .tabla-armas table {
@@ -406,6 +450,7 @@ tr:hover {
 
 .descripcion-stat:hover {
   background-color: rgba(27, 230, 162, 0.8);
+  box-shadow: 3px 3px black;
 }
 
 .descripcion {
@@ -428,6 +473,7 @@ tr:hover {
 
 .artefacto img:hover {
   background-color: rgba(172, 65, 65, 0.95);
+  box-shadow: 3px 3px black;
 }
 
 .artefacto p {
@@ -438,12 +484,23 @@ tr:hover {
   font-weight: bold;
 }
 
+.artefacto p:hover {
+  background-color: rgb(182, 141, 39);
+  max-width: auto;
+}
+
 /* Estilos de la Pagina de Contacto */
 
 .body-contacto {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-rows: 150px 50px 400px;
+  grid-template-columns: 850px auto;
 }
 
 .titulo3 {
@@ -460,21 +517,47 @@ tr:hover {
   font-size: large;
   font-weight: bold;
   margin: 10px;
+  grid-row: 2/3;
+}
+
+.formulario {
+  grid-row: 3/4;
+}
+
+.formulario:hover {
+  background-color: #d90427e3;
+  color: beige;
+  font-weight: bold;
+  max-width: fit-content;
+  max-height: fit-content;
+  border-radius: 5px;
 }
 
 .formulario div {
   margin: 10px;
 }
 
+.formulario div textarea {
+  width: 500px;
+}
+
+.bennett {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  justify-self: center;
+}
+
 .bennett img {
   width: 500px;
   height: auto;
   border-radius: 50px;
-  box-shadow: 1px 5px 15px 1px black;
+  box-shadow: 5px 5px black;
+  grid-row: 2/4;
+  grid-column: 2/3;
 }
 
 .bennett img:hover {
-  box-shadow: 1px 5px 15px 1px red;
+  box-shadow: 5px 5px red;
 }
 
 .footer-contacto {

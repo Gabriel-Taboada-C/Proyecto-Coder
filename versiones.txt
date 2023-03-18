@@ -25,10 +25,26 @@ Agregada imagen de fondo
 
 Pagina index:
 Corregido el footer
+Agregados hovers a info para mejor legibilidad
+
+Pagina Personajes:
+Agregado hovers a img de personajes y al iframe
+Agregados hovers a descripcion de personaje para mejor legibilidad 
+
+Pagina Armas:
+Orden de img de armas modificado (Lapida del lobo pasa primera)
+Agregado hovers a img de armas
+Agregados hovers a descripcion de arma para mejor legibilidad
+
+Pagina Artefactos:
+Agregados hovers a descripciones para mejor legibilidad
+Agregado hovers a elementos (tablas, img)
 
 Pagina Contacto:
 Agregada imagen bennett al html
 Agregados estilos para imagen bennett al css
+Orden de la pagina modificado con GRID
+Agregados hovers al formulario para mejor legibilidad
 
 Carpeta imagenes:
 Se agrego imagen background bennett
