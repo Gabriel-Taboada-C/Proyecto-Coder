@@ -40,6 +40,13 @@ header nav ul li a:hover {
   color: yellow;
 }
 
+@media (max-width: 479px) {
+  header nav ul {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+
 /* Estilos de la Pagina de Inicio */
 
 h1 {
@@ -354,6 +361,71 @@ tr:hover {
   margin: 10px;
   grid-row: 3/4;
   grid-column: 2/3;
+}
+
+.reflvl:hover {
+  background-color: aliceblue;
+}
+
+@media (max-width: 479px) {
+  h2 {
+    margin-left: 0;
+  }
+
+  .busqueda {
+    margin-left: 10px;
+  }
+
+  .carta-arma {
+    max-width: 95%;
+    margin-bottom: 0;
+  }
+
+  .grid-container3 {
+    grid-template-rows: 300px 200px 350px 150px 50px;
+    grid-template-columns: 478px;
+  }
+
+  .imgarma img {
+    width: 350px;
+    height: auto;
+    margin: 0;
+  }
+
+  .descripcion-arma {
+    grid-row: 2/3;
+    background-color: rgba(16, 7, 54, 0.9);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+  }
+
+  .descripcion-arma p {
+    margin: 5px;
+  }
+
+  .tabla-armas {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .refinamiento {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    border-radius: 5px;
+  }
+
+  .refinamiento p {
+    margin: 2px;
+  }
+
+  .reflvl {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    background-color: aliceblue;
+    border-radius: 3px;
+  }
 }
 
 /* Estilos de la Pagina de Artefactos */

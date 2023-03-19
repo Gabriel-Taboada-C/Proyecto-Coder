@@ -22,10 +22,11 @@ Todas las paginas:
 Corregidos los headers y footers
 Agregados efectos (hover) a elementos varios (img, tablas, iframe, nav)
 Agregada imagen de fondo
+Agregados efectos de bordes
 
 Pagina index:
 Corregido el footer
-Agregados hovers a info para mejor legibilidad
+Agregados boxes a info para mejor legibilidad
 
 Pagina Personajes:
 Agregado hovers a img de personajes y al iframe
@@ -49,3 +50,9 @@ Agregados hovers al formulario para mejor legibilidad
 Carpeta imagenes:
 Se agrego imagen background bennett
 Se elimino imagen constelacion y diluc(repetida)
+
+Version 3 (a hacer):
+
+media query si o si
+ver de agregar modals a personajes y armas
+ver algo de BEM pero no es obligatorio
