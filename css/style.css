@@ -561,6 +561,63 @@ tr:hover {
   max-width: auto;
 }
 
+@media (max-width: 479px) {
+  /* h2 {
+    margin-left: 0;
+  }
+
+  .busqueda {
+    margin-left: 10px;
+  }
+
+  .carta-arma {
+    max-width: 95%;
+    margin-bottom: 0;
+  } */
+
+  .grid-container4 {
+    grid-template-rows: 50px 300px 50px 200px 50px 350px 50px 350px;
+    grid-template-columns: 478px;
+  }
+
+  .stats {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: right;
+  }
+
+  .descripcion-stat {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    border-radius: 5px;
+  }
+
+  .nombre-tabla2 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+
+  .tabla-estsec {
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+
+  .name-art {
+    grid-row: 7/8;
+    grid-column: 1/2;
+  }
+
+  .artefacto {
+    grid-row: 8/9;
+    align-self: center;
+  }
+
+  .artefacto img {
+    width: 200px;
+    height: auto;
+  }
+}
+
 /* Estilos de la Pagina de Contacto */
 
 .body-contacto {
