@@ -261,6 +261,41 @@ h2 {
   font-weight: bolder;
 }
 
+@media (max-width: 479px) {
+  .carta-personaje {
+    max-width: 95%;
+    margin-bottom: 0;
+  }
+
+  .grid-container2 {
+    grid-template-rows: 600px 200px 400px;
+    grid-template-columns: 478px;
+  }
+
+  .grid-container2 .foto-personaje {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .grid-container2 .descripcion-personaje {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .descripcion-personaje {
+    background-color: rgba(143, 48, 48, 0.9);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    font-style: oblique;
+    font-weight: bolder;
+  }
+
+  .grid-container2 .video-personaje iframe {
+    width: 450px;
+    height: 300px;
+  }
+}
+
 /* Estilos de la Pagina de Armas */
 
 .carta-arma {
@@ -562,19 +597,6 @@ tr:hover {
 }
 
 @media (max-width: 479px) {
-  /* h2 {
-    margin-left: 0;
-  }
-
-  .busqueda {
-    margin-left: 10px;
-  }
-
-  .carta-arma {
-    max-width: 95%;
-    margin-bottom: 0;
-  } */
-
   .grid-container4 {
     grid-template-rows: 50px 300px 50px 200px 50px 350px 50px 350px;
     grid-template-columns: 478px;
@@ -653,7 +675,7 @@ tr:hover {
   grid-row: 3/4;
 }
 
-.formulario:hover {
+.formulario form:hover {
   background-color: #d90427e3;
   color: beige;
   font-weight: bold;
@@ -696,6 +718,42 @@ tr:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+@media (max-width: 479px) {
+  .titulo3 {
+    max-width: 95%;
+    margin-bottom: 0;
+  }
+
+  .grid-container5 {
+    grid-template-rows: 120px 80px 250px 350px 100px;
+    grid-template-columns: 478px;
+  }
+
+  .bennett {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    align-self: center;
+  }
+
+  .bennett img {
+    width: 200px;
+  }
+
+  .formulario {
+    grid-row: 4/5;
+    align-self: center;
+  }
+
+  .formulario form {
+    background-color: #d90427e3;
+    color: beige;
+    font-weight: bold;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 5px;
+  }
 }
 
 /* Tanto el body como el footer de la pagina contacto son diferentes ya que la pagina tiene poco contenido, lo pude ver en un video aunque no es la forma mas optima ya que si agrego mas contenido el footer puede quedar mal hubicado. Si es una mala practica lo cambio y lo hago con flexbox o con grid para la proxima entrega. Gracias */
