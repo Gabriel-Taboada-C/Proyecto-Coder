@@ -51,8 +51,8 @@ Carpeta imagenes:
 Se agrego imagen background bennett
 Se elimino imagen constelacion y diluc(repetida)
 
-Version 3 (a hacer):
+Version 3:
 
-media query si o si
-ver de agregar modals a personajes y armas
-ver algo de BEM pero no es obligatorio
+Todas las paginas:
+Se agregaron Media Query para Tablet y para Mobile para todas las paginas EXCEPTO index
+Se arreglaron problemas de nav y footer

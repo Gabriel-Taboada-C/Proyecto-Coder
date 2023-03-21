@@ -321,13 +321,14 @@ h2 {
   }
 
   .grid-container2 {
-    grid-template-rows: 600px 200px 400px;
-    grid-template-columns: 478px;
+    grid-template-rows: 500px auto 400px;
+    grid-template-columns: auto 0px;
   }
 
   .grid-container2 .foto-personaje {
     grid-row: 1/2;
     grid-column: 1/2;
+    justify-self: center;
   }
 
   .grid-container2 .descripcion-personaje {
@@ -531,15 +532,16 @@ tr:hover {
   .carta-arma {
     max-width: 95%;
     margin-bottom: 0;
+    overflow: hidden;
   }
 
   .grid-container3 {
     grid-template-rows: 300px 200px 350px 150px 50px;
-    grid-template-columns: 478px;
+    grid-template-columns: auto;
   }
 
   .imgarma img {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 0;
   }
@@ -551,6 +553,8 @@ tr:hover {
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 5px 5px black;
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
 
   .descripcion-arma p {
@@ -768,8 +772,8 @@ tr:hover {
 
 @media (max-width: 480px) {
   .grid-container4 {
-    grid-template-rows: 50px 300px 50px 200px 50px 350px 50px 350px;
-    grid-template-columns: 478px;
+    grid-template-rows: 50px 300px 50px auto 50px 450px 50px 350px;
+    grid-template-columns: auto;
   }
 
   .stats {
@@ -782,6 +786,7 @@ tr:hover {
     grid-row: 4/5;
     grid-column: 1/2;
     border-radius: 5px;
+    overflow: scroll;
   }
 
   .nombre-tabla2 {
@@ -812,11 +817,7 @@ tr:hover {
 
 /* Estilos de la Pagina de Contacto */
 
-.body-contacto {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+/* Sigo teniendo problemas con el footer para estilo web, no me queda al final de la pagina */
 
 .grid-container5 {
   display: grid;
@@ -881,15 +882,6 @@ tr:hover {
   box-shadow: 5px 5px red;
 }
 
-.footer-contacto {
-  background-color: black;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 @media (max-width: 768px) {
   .titulo3 {
     max-width: 95%;
@@ -898,7 +890,7 @@ tr:hover {
 
   .grid-container5 {
     grid-template-rows: 120px 80px 250px 350px;
-    grid-template-columns: 767px;
+    grid-template-columns: auto;
     justify-items: center;
   }
 
@@ -929,19 +921,24 @@ tr:hover {
 
 @media (max-width: 480px) {
   .titulo3 {
-    max-width: 95%;
+    max-width: 450px;
     margin-bottom: 0;
+    text-align: start;
+  }
+
+  .mensajecont {
+    max-width: 450px;
   }
 
   .grid-container5 {
-    grid-template-rows: 120px 80px 250px 350px 100px;
-    grid-template-columns: 478px;
+    grid-template-rows: 120px 80px 250px 350px;
+    grid-template-columns: auto;
+    justify-items: left;
   }
 
   .bennett {
     grid-row: 3/4;
     grid-column: 1/2;
-    align-self: center;
   }
 
   .bennett img {
@@ -950,7 +947,6 @@ tr:hover {
 
   .formulario {
     grid-row: 4/5;
-    align-self: center;
   }
 
   .formulario form {
@@ -961,10 +957,11 @@ tr:hover {
     max-height: fit-content;
     border-radius: 5px;
   }
-}
 
-/* Tanto el body como el footer de la pagina contacto son diferentes ya que la pagina tiene poco contenido, lo pude ver en un video aunque no es la forma mas optima ya que si agrego mas contenido el footer puede quedar mal hubicado. Si es una mala practica lo cambio y lo hago con flexbox o con grid para la proxima entrega. Gracias */
-/* Al agregar un min-height la pagina de contacto me queda mas ancha que el resto de paginas 1879px vs 1865px por lo que el nav se mueve un poco a la derecha, por el momento no se como arreglar esto */
+  .formulario form div textarea {
+    max-width: 440px;
+  }
+}
 
 /* Estilo del Footer */
 
