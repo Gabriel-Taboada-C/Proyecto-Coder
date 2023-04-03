@@ -56,3 +56,18 @@ Version 3:
 Todas las paginas:
 Se agregaron Media Query para Tablet y para Mobile para todas las paginas EXCEPTO index
 Se arreglaron problemas de nav y footer
+
+Version 4:
+
+Se modificó el proyecto en base a lo sugerido por el tutor luego de la 2da Entrega:
+"La etiqueta <link> para el ícono del sitio tiene un atributo href vacío, lo cual indica que la ubicación del archivo no está especificada. Por lo tanto, deberías agregar la ruta correcta a tu archivo de icono. (Se cambió)
+ La etiqueta <link> para la fuente 'Roboto Condensed' tiene una tipografía mal escrita. Deberías cambiar "Gloock" por "Gothic". (Se cambió)
+ La etiqueta <link> para la hoja de estilo de Bootstrap se refiere a una versión en desarrollo "alpha". Es posible que desees usar una versión estable en su lugar. (No se cambió)
+ El ID carouselExampleIndicators parece ser redundante, ya que solo se usa una vez en el código. Si no lo necesitas para tu código de JavaScript, puedes eliminarlo." (Se cambió)
+
+Se renombro el archivo en GitHub para poder verlo online mediante github.io. A partir de esto se corrigieron las imagenes de "carta de personaje" y "carta de arma" de las páginas "personajes" y "armas" respectivamente.
+
+Se agrego la carpeta de scss para trabajar con SASS.
+
+
+

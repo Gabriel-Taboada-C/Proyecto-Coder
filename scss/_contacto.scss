@@ -1,0 +1,62 @@
+.grid-container5 {
+  display: grid;
+  grid-template-rows: 150px 50px 400px;
+  grid-template-columns: 850px auto;
+}
+
+.titulo3 {
+  text-align: center;
+  width: 750px;
+  height: 100px;
+  background: url(/imagenes/contactanos.webp);
+  margin: 10px;
+  border-radius: 5px;
+  border: solid black;
+}
+
+.mensajecont {
+  font-size: large;
+  font-weight: bold;
+  margin: 10px;
+  grid-row: 2/3;
+}
+
+.formulario {
+  grid-row: 3/4;
+}
+
+.formulario form:hover {
+  background-color: #d90427e3;
+  color: beige;
+  font-weight: bold;
+  max-width: fit-content;
+  max-height: fit-content;
+  border-radius: 5px;
+}
+
+.formulario div {
+  margin: 10px;
+}
+
+.formulario div textarea {
+  width: 500px;
+}
+
+.bennett {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.bennett img {
+  width: 500px;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 5px 5px black;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.bennett img:hover {
+  box-shadow: 5px 5px red;
+}

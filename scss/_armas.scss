@@ -1,0 +1,103 @@
+.carta-arma {
+  width: 800px;
+  height: 100px;
+  background: url(../imagenes/cartahutao.webp);
+  margin: 10px;
+  border-radius: 5px;
+  border: solid black;
+}
+
+.carta-texto p.substat {
+  color: white;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: bold;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 100px 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.imgarma img {
+  width: 450px;
+  height: auto;
+  margin: 30px;
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.descripcion-arma {
+  margin: 20px;
+  font-size: large;
+  text-indent: 5mm;
+  grid-row: 2/4;
+  grid-column: 1/2;
+}
+
+.descripcion-arma:hover {
+  background-color: rgba(16, 7, 54, 0.9);
+  color: white;
+  max-width: fit-content;
+  max-height: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+}
+
+.tabla-armas table {
+  margin: 10px;
+  text-align: center;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+
+.tabla-armas th {
+  background-color: black;
+  color: white;
+}
+
+/* Aplicado para TODAS las tablas */
+
+td,
+th {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+tr {
+  background-color: rgba(250, 235, 215, 0.9);
+}
+
+tr:hover {
+  background-color: orange;
+}
+
+.refinamiento {
+  font-style: italic;
+  font-size: large;
+  margin: 10px;
+  background-color: aliceblue;
+  border: 2px solid black;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.refinamiento span {
+  color: blue;
+}
+
+.reflvl {
+  margin: 10px;
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.reflvl:hover {
+  background-color: aliceblue;
+}
