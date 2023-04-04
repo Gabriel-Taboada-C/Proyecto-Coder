@@ -69,5 +69,16 @@ Se renombro el archivo en GitHub para poder verlo online mediante github.io. A p
 
 Se agrego la carpeta de scss para trabajar con SASS.
 
+Pagina index:
+Se agrego su correpondiente Media Query para vista Tablet y Mobile.
+
+Todas las paginas:
+Se cambió la ruta de "style" por la de la carpeta scss.
+Se corrigieron las vistas de Tablet y Mobile que funcionaban mal.
+
+Scss:
+Se transformó el código css a sintaxis SASS.
+Se subdividieron los estilos de cada página para una mejor legibilidad del código.
+
 
 

@@ -5,10 +5,10 @@
 }
 
 .titulo3 {
-  text-align: center;
+  text-align: start;
   width: 750px;
   height: 100px;
-  background: url(/imagenes/contactanos.webp);
+  background: url(../imagenes/contactanos.webp);
   margin: 10px;
   border-radius: 5px;
   border: solid black;
@@ -23,40 +23,37 @@
 
 .formulario {
   grid-row: 3/4;
-}
-
-.formulario form:hover {
-  background-color: #d90427e3;
-  color: beige;
-  font-weight: bold;
-  max-width: fit-content;
-  max-height: fit-content;
-  border-radius: 5px;
-}
-
-.formulario div {
-  margin: 10px;
-}
-
-.formulario div textarea {
-  width: 500px;
+  div {
+    margin: 10px;
+    textarea {
+      width: 500px;
+    }
+  }
+  form {
+    &:hover {
+      background-color: #d90427e3;
+      color: beige;
+      font-weight: bold;
+      max-width: fit-content;
+      max-height: fit-content;
+      border-radius: 5px;
+    }
+  }
 }
 
 .bennett {
   grid-row: 2/4;
   grid-column: 2/3;
   justify-self: center;
-}
-
-.bennett img {
-  width: 500px;
-  height: auto;
-  border-radius: 50px;
-  box-shadow: 5px 5px black;
-  grid-row: 2/4;
-  grid-column: 2/3;
-}
-
-.bennett img:hover {
-  box-shadow: 5px 5px red;
+  img {
+    width: 500px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px black;
+    grid-row: 2/4;
+    grid-column: 2/3;
+    &:hover {
+      box-shadow: 5px 5px red;
+    }
+  }
 }

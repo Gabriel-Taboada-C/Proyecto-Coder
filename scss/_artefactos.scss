@@ -1,13 +1,12 @@
 .titulo2 {
   margin: 10px;
-}
-
-.titulo2 p {
-  margin: 5px;
-  max-width: 1600px;
-  text-align: justify;
-  font-size: medium;
-  text-indent: 5px;
+  p {
+    margin: 5px;
+    max-width: 1600px;
+    text-align: justify;
+    font-size: medium;
+    text-indent: 5px;
+  }
 }
 
 .grid-container4 {
@@ -16,115 +15,93 @@
   grid-template-columns: 800px 600px;
   align-items: start;
   justify-content: space-between;
-}
-
-.nombre-tabla1 {
-  margin: 10px;
-  grid-row: 1/2;
-}
-
-.tabla-estprin {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  justify-self: center;
-}
-
-.tabla-estprin table {
-  border-collapse: collapse;
-  text-align: center;
-  margin: 10px;
-}
-
-.tabla-estprin th {
-  background-color: black;
-  color: white;
-}
-
-.tabla-estsec {
-  grid-row: 4/5;
-  grid-column: 1/2;
-  justify-self: center;
-}
-
-.tabla-estsec table {
-  border-collapse: collapse;
-  text-align: center;
-  margin: 20px;
-}
-
-.nombre-tabla2 {
-  margin: 10px;
-  grid-row: 3/4;
-}
-
-.tabla-estsec th {
-  background-color: black;
-  color: white;
-}
-
-.name-art {
-  margin: 20px;
-  grid-row: 3/4;
-  grid-column: 2/3;
-  text-align: right;
-}
-
-.stats {
-  margin: 10px;
-  text-align: left;
-}
-
-.descripcion-stat {
-  margin: 10px;
-  padding: 10px;
-  text-indent: 5px;
-  max-height: 200px;
-  max-width: 600px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: rgba(250, 235, 215, 0.95);
-  font-weight: bold;
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
-.descripcion-stat:hover {
-  background-color: rgba(27, 230, 162, 0.8);
-  box-shadow: 3px 3px black;
-}
-
-.descripcion {
-  font-size: large;
-  margin: 10px;
-  text-align: justify;
-}
-
-.artefacto {
-  text-align: right;
-  grid-row: 4/5;
-}
-
-.artefacto img {
-  margin-right: 20px;
-  border: solid black;
-  border-radius: 5px;
-  background-color: rgba(250, 235, 215, 0.95);
-}
-
-.artefacto img:hover {
-  background-color: rgba(172, 65, 65, 0.95);
-  box-shadow: 3px 3px black;
-}
-
-.artefacto p {
-  max-width: 600px;
-  margin-right: 20px;
-  text-align: right;
-  font-size: medium;
-  font-weight: bold;
-}
-
-.artefacto p:hover {
-  background-color: rgb(182, 141, 39);
-  max-width: auto;
+  .nombre-tabla1 {
+    margin: 10px;
+    grid-row: 1/2;
+  }
+  .tabla-estprin {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      margin: 10px;
+    }
+    th {
+      background-color: black;
+      color: white;
+    }
+  }
+  .tabla-estsec {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    justify-self: center;
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      margin: 20px;
+    }
+    th {
+      background-color: black;
+      color: white;
+    }
+  }
+  .nombre-tabla2 {
+    margin: 10px;
+    grid-row: 3/4;
+  }
+  .name-art {
+    margin: 20px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    text-align: right;
+  }
+  .stats {
+    margin: 10px;
+    text-align: left;
+  }
+  .descripcion-stat {
+    margin: 10px;
+    padding: 10px;
+    text-indent: 5px;
+    max-height: 200px;
+    max-width: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(250, 235, 215, 0.95);
+    font-weight: bold;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    overflow: scroll;
+    &:hover {
+      background-color: rgba(27, 230, 162, 0.8);
+      box-shadow: 3px 3px black;
+    }
+  }
+  .artefacto {
+    text-align: right;
+    grid-row: 4/5;
+    img {
+      margin-right: 20px;
+      border: solid black;
+      border-radius: 5px;
+      background-color: rgba(250, 235, 215, 0.95);
+      &:hover {
+        background-color: rgba(172, 65, 65, 0.95);
+        box-shadow: 3px 3px black;
+      }
+    }
+    p {
+      max-width: 600px;
+      margin-right: 20px;
+      text-align: right;
+      font-size: medium;
+      font-weight: bold;
+      &:hover {
+        background-color: rgb(182, 141, 39);
+        max-width: auto;
+      }
+    }
+  }
 }

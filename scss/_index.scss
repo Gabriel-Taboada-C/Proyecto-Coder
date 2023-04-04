@@ -1,5 +1,7 @@
-.carousel .carousel-item {
-  height: 90vh;
+.carousel {
+  .carousel-item {
+    height: 90vh;
+  }
 }
 
 .texto-index {
@@ -14,7 +16,7 @@
   background-color: #8c8312;
 }
 
-#grid-container {
+#grid-container1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px 300px 300px 300px;
@@ -24,72 +26,64 @@
   text-align: justify;
   font-size: large;
   font-style: bold;
-}
-
-#grid-container .imgin-a {
-  margin: 10px;
-  box-shadow: 5px 5px black;
-}
-
-#grid-container .txtin-a {
-  margin: 50px;
-  padding: 10px;
-  text-indent: 5mm;
-  max-width: 600px;
-  font-weight: bold;
-  border: 4px double black;
-  border-radius: 3px;
-  box-shadow: 3px 3px black;
-  background-color: #2ab2dbd2;
-}
-
-#grid-container .imgin-b {
-  margin: 10px;
-  box-shadow: 5px 5px black;
-}
-
-#grid-container .txtin-b {
-  margin: 50px;
-  padding: 10px;
-  text-indent: 5mm;
-  max-width: 600px;
-  font-weight: bold;
-  border: 4px double black;
-  border-radius: 3px;
-  box-shadow: 3px 3px black;
-  background-color: #2ab2dbd2;
-}
-
-#grid-container .imgin-c {
-  margin: 10px;
-  box-shadow: 5px 5px black;
-}
-
-#grid-container .txtin-c {
-  margin: 50px;
-  padding: 10px;
-  text-indent: 5mm;
-  max-width: 600px;
-  font-weight: bold;
-  border: 4px double black;
-  border-radius: 3px;
-  box-shadow: 3px 3px black;
-  background-color: #2ab2dbd2;
-}
-
-#grid-container .imgin-d {
-  margin: 10px;
-  box-shadow: 5px 5px black;
-}
-
-#grid-container .txtin-d {
-  margin: 50px;
-  padding: 10px;
-  text-indent: 5mm;
-  max-width: 600px;
-  font-weight: bold;
-  border: 4px double black;
-  border-radius: 3px;
-  box-shadow: 3px 3px black;
-  background-color: #2ab2dbd2;
+  .imgin-a {
+    margin: 10px;
+    box-shadow: 5px 5px black;
+  }
+  .txtin-a {
+    margin: 50px;
+    padding: 10px;
+    text-indent: 5mm;
+    max-width: 600px;
+    font-weight: bold;
+    border: 4px double black;
+    border-radius: 3px;
+    box-shadow: 3px 3px black;
+    background-color: #2ab2dbd2;
+  }
+  .imgin-b {
+    margin: 10px;
+    box-shadow: 5px 5px black;
+  }
+  .txtin-b {
+    margin: 50px;
+    padding: 10px;
+    text-indent: 5mm;
+    max-width: 600px;
+    font-weight: bold;
+    border: 4px double black;
+    border-radius: 3px;
+    box-shadow: 3px 3px black;
+    background-color: #2ab2dbd2;
+  }
+  .imgin-c {
+    margin: 10px;
+    box-shadow: 5px 5px black;
+  }
+  .txtin-c {
+    margin: 50px;
+    padding: 10px;
+    text-indent: 5mm;
+    max-width: 600px;
+    font-weight: bold;
+    border: 4px double black;
+    border-radius: 3px;
+    box-shadow: 3px 3px black;
+    background-color: #2ab2dbd2;
+  }
+  .imgin-d {
+    margin: 10px;
+    box-shadow: 5px 5px black;
+  }
+  .txtin-d {
+    margin: 50px;
+    padding: 10px;
+    text-indent: 5mm;
+    max-width: 600px;
+    font-weight: bold;
+    border: 4px double black;
+    border-radius: 3px;
+    box-shadow: 3px 3px black;
+    background-color: #2ab2dbd2;
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .carousel .carousel-item {
   height: 90vh;
 }
@@ -14,7 +15,7 @@
   background-color: #8c8312;
 }
 
-#grid-container {
+#grid-container1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px 300px 300px 300px;
@@ -25,13 +26,11 @@
   font-size: large;
   font-style: bold;
 }
-
-#grid-container .imgin-a {
+#grid-container1 .imgin-a {
   margin: 10px;
   box-shadow: 5px 5px black;
 }
-
-#grid-container .txtin-a {
+#grid-container1 .txtin-a {
   margin: 50px;
   padding: 10px;
   text-indent: 5mm;
@@ -42,13 +41,11 @@
   box-shadow: 3px 3px black;
   background-color: rgba(42, 178, 219, 0.8235294118);
 }
-
-#grid-container .imgin-b {
+#grid-container1 .imgin-b {
   margin: 10px;
   box-shadow: 5px 5px black;
 }
-
-#grid-container .txtin-b {
+#grid-container1 .txtin-b {
   margin: 50px;
   padding: 10px;
   text-indent: 5mm;
@@ -59,13 +56,11 @@
   box-shadow: 3px 3px black;
   background-color: rgba(42, 178, 219, 0.8235294118);
 }
-
-#grid-container .imgin-c {
+#grid-container1 .imgin-c {
   margin: 10px;
   box-shadow: 5px 5px black;
 }
-
-#grid-container .txtin-c {
+#grid-container1 .txtin-c {
   margin: 50px;
   padding: 10px;
   text-indent: 5mm;
@@ -76,13 +71,11 @@
   box-shadow: 3px 3px black;
   background-color: rgba(42, 178, 219, 0.8235294118);
 }
-
-#grid-container .imgin-d {
+#grid-container1 .imgin-d {
   margin: 10px;
   box-shadow: 5px 5px black;
 }
-
-#grid-container .txtin-d {
+#grid-container1 .txtin-d {
   margin: 50px;
   padding: 10px;
   text-indent: 5mm;
@@ -109,7 +102,6 @@
   box-shadow: 1px 1px blue;
   background-color: rgba(37, 37, 138, 0.8);
 }
-
 .opciones img:hover {
   background-color: rgba(16, 7, 54, 0.9);
   box-shadow: 3px 3px black;
@@ -130,7 +122,6 @@
   font-style: oblique;
   margin-left: 10px;
 }
-
 .carta-texto h4 {
   font-size: 25px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -138,7 +129,6 @@
   color: rgb(68, 67, 67);
   margin-left: 10px;
 }
-
 .carta-texto p {
   color: gold;
   margin-left: 10px;
@@ -151,30 +141,25 @@
   justify-items: center;
   align-items: center;
 }
-
+.grid-container2 .foto-personaje {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
 .grid-container2 .foto-personaje img {
   height: auto;
   width: 300px;
   border-radius: 3px;
 }
-
-.grid-container2 .foto-personaje {
-  grid-row: 1/3;
-  grid-column: 1/2;
-}
-
 .grid-container2 .video-personaje iframe {
   width: 800px;
   height: 400px;
   margin: 10px;
   border-radius: 3px;
 }
-
-.video-personaje iframe:hover {
+.grid-container2 .video-personaje iframe:hover {
   border-radius: 5px;
   box-shadow: 5px 5px 5px black;
 }
-
 .grid-container2 .descripcion-personaje {
   margin: 40px;
   padding: 20px;
@@ -184,8 +169,7 @@
   grid-row: 2/3;
   grid-column: 2/3;
 }
-
-.descripcion-personaje:hover {
+.grid-container2 .descripcion-personaje:hover {
   background-color: rgba(143, 48, 48, 0.9);
   border-radius: 5px;
   box-shadow: 5px 5px 5px black;
@@ -216,24 +200,21 @@
   justify-items: center;
   align-items: center;
 }
-
-.imgarma img {
+.grid-container3 .imgarma img {
   width: 450px;
   height: auto;
   margin: 30px;
   text-align: justify;
   border-radius: 10px;
 }
-
-.descripcion-arma {
+.grid-container3 .descripcion-arma {
   margin: 20px;
   font-size: large;
   text-indent: 5mm;
   grid-row: 2/4;
   grid-column: 1/2;
 }
-
-.descripcion-arma:hover {
+.grid-container3 .descripcion-arma:hover {
   background-color: rgba(16, 7, 54, 0.9);
   color: white;
   max-width: -moz-fit-content;
@@ -244,36 +225,18 @@
   border-radius: 5px;
   box-shadow: 5px 5px black;
 }
-
-.tabla-armas table {
+.grid-container3 .tabla-armas table {
   margin: 10px;
   text-align: center;
   border-collapse: collapse;
   display: flex;
   justify-content: center;
 }
-
-.tabla-armas th {
+.grid-container3 .tabla-armas th {
   background-color: black;
   color: white;
 }
-
-/* Aplicado para TODAS las tablas */
-td,
-th {
-  border: 2px solid black;
-  padding: 10px;
-}
-
-tr {
-  background-color: rgba(250, 235, 215, 0.9);
-}
-
-tr:hover {
-  background-color: orange;
-}
-
-.refinamiento {
+.grid-container3 .refinamiento {
   font-style: italic;
   font-size: large;
   margin: 10px;
@@ -282,25 +245,21 @@ tr:hover {
   grid-row: 2/3;
   grid-column: 2/3;
 }
-
-.refinamiento span {
+.grid-container3 .refinamiento span {
   color: blue;
 }
-
-.reflvl {
+.grid-container3 .reflvl {
   margin: 10px;
   grid-row: 3/4;
   grid-column: 2/3;
 }
-
-.reflvl:hover {
+.grid-container3 .reflvl:hover {
   background-color: aliceblue;
 }
 
 .titulo2 {
   margin: 10px;
 }
-
 .titulo2 p {
   margin: 5px;
   max-width: 1600px;
@@ -316,64 +275,53 @@ tr:hover {
   align-items: start;
   justify-content: space-between;
 }
-
-.nombre-tabla1 {
+.grid-container4 .nombre-tabla1 {
   margin: 10px;
   grid-row: 1/2;
 }
-
-.tabla-estprin {
+.grid-container4 .tabla-estprin {
   grid-row: 2/3;
   grid-column: 1/2;
   justify-self: center;
 }
-
-.tabla-estprin table {
+.grid-container4 .tabla-estprin table {
   border-collapse: collapse;
   text-align: center;
   margin: 10px;
 }
-
-.tabla-estprin th {
+.grid-container4 .tabla-estprin th {
   background-color: black;
   color: white;
 }
-
-.tabla-estsec {
+.grid-container4 .tabla-estsec {
   grid-row: 4/5;
   grid-column: 1/2;
   justify-self: center;
 }
-
-.tabla-estsec table {
+.grid-container4 .tabla-estsec table {
   border-collapse: collapse;
   text-align: center;
   margin: 20px;
 }
-
-.nombre-tabla2 {
-  margin: 10px;
-  grid-row: 3/4;
-}
-
-.tabla-estsec th {
+.grid-container4 .tabla-estsec th {
   background-color: black;
   color: white;
 }
-
-.name-art {
+.grid-container4 .nombre-tabla2 {
+  margin: 10px;
+  grid-row: 3/4;
+}
+.grid-container4 .name-art {
   margin: 20px;
   grid-row: 3/4;
   grid-column: 2/3;
   text-align: right;
 }
-
-.stats {
+.grid-container4 .stats {
   margin: 10px;
   text-align: left;
 }
-
-.descripcion-stat {
+.grid-container4 .descripcion-stat {
   margin: 10px;
   padding: 10px;
   text-indent: 5px;
@@ -385,45 +333,34 @@ tr:hover {
   font-weight: bold;
   grid-row: 2/3;
   grid-column: 2/3;
+  overflow: scroll;
 }
-
-.descripcion-stat:hover {
+.grid-container4 .descripcion-stat:hover {
   background-color: rgba(27, 230, 162, 0.8);
   box-shadow: 3px 3px black;
 }
-
-.descripcion {
-  font-size: large;
-  margin: 10px;
-  text-align: justify;
-}
-
-.artefacto {
+.grid-container4 .artefacto {
   text-align: right;
   grid-row: 4/5;
 }
-
-.artefacto img {
+.grid-container4 .artefacto img {
   margin-right: 20px;
   border: solid black;
   border-radius: 5px;
   background-color: rgba(250, 235, 215, 0.95);
 }
-
-.artefacto img:hover {
+.grid-container4 .artefacto img:hover {
   background-color: rgba(172, 65, 65, 0.95);
   box-shadow: 3px 3px black;
 }
-
-.artefacto p {
+.grid-container4 .artefacto p {
   max-width: 600px;
   margin-right: 20px;
   text-align: right;
   font-size: medium;
   font-weight: bold;
 }
-
-.artefacto p:hover {
+.grid-container4 .artefacto p:hover {
   background-color: rgb(182, 141, 39);
   max-width: auto;
 }
@@ -435,10 +372,10 @@ tr:hover {
 }
 
 .titulo3 {
-  text-align: center;
+  text-align: start;
   width: 750px;
   height: 100px;
-  background: url(/imagenes/contactanos.webp);
+  background: url(../imagenes/contactanos.webp);
   margin: 10px;
   border-radius: 5px;
   border: solid black;
@@ -454,7 +391,12 @@ tr:hover {
 .formulario {
   grid-row: 3/4;
 }
-
+.formulario div {
+  margin: 10px;
+}
+.formulario div textarea {
+  width: 500px;
+}
 .formulario form:hover {
   background-color: rgba(217, 4, 39, 0.8901960784);
   color: beige;
@@ -466,20 +408,11 @@ tr:hover {
   border-radius: 5px;
 }
 
-.formulario div {
-  margin: 10px;
-}
-
-.formulario div textarea {
-  width: 500px;
-}
-
 .bennett {
   grid-row: 2/4;
   grid-column: 2/3;
   justify-self: center;
 }
-
 .bennett img {
   width: 500px;
   height: auto;
@@ -488,7 +421,6 @@ tr:hover {
   grid-row: 2/4;
   grid-column: 2/3;
 }
-
 .bennett img:hover {
   box-shadow: 5px 5px red;
 }
@@ -507,7 +439,7 @@ body {
   background-attachment: fixed;
 }
 
-/* Estilo del Encabezado */
+/* Estilos Generales */
 header nav ul {
   display: flex;
   width: auto;
@@ -518,37 +450,19 @@ header nav ul {
   padding: 0;
   margin: 0;
 }
-
 header nav ul li {
   list-style: none;
   margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 header nav ul li a {
   text-decoration: none;
   color: white;
 }
-
 header nav ul li a:hover {
   color: yellow;
 }
 
-@media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
-@media (max-width: 480px) {
-  header nav ul {
-    flex-direction: column;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
-/* Estilos de la Pagina de Inicio */
 h1 {
   font-family: "Gothic", serif;
   text-align: center;
@@ -557,20 +471,88 @@ h1 {
   padding: 10px;
 }
 
-/* Estilos de la Pagina de Personajes */
 h2 {
   font-size: 40px;
   margin-left: 30px;
 }
 
+td,
+th {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+tr {
+  background-color: rgba(250, 235, 215, 0.9);
+}
+tr:hover {
+  background-color: orange;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer p {
+  margin-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+/* tablet */
 @media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  /* index */
+  .carousel .carousel-item {
+    height: auto;
+  }
+  #grid-container1 {
+    display: grid;
+    grid-template-rows: repeat(4, 250px);
+    grid-template-columns: repeat(2, auto);
+  }
+  #grid-container1 .imgin-a img {
+    width: 280px;
+    height: auto;
+  }
+  #grid-container1 .imgin-b img {
+    width: 280px;
+    height: auto;
+  }
+  #grid-container1 .txtin-a p {
+    max-height: 180px;
+    overflow: scroll;
+    text-align: left;
+  }
+  #grid-container1 .txtin-b p {
+    max-height: 180px;
+    overflow: scroll;
+    text-align: left;
+  }
+  #grid-container1 .txtin-c p {
+    max-height: 180px;
+    overflow: scroll;
+    text-align: left;
+  }
+  #grid-container1 .txtin-d p {
+    max-height: 180px;
+    overflow: scroll;
+    text-align: left;
+  }
+  /* Página de Personajes */
   .carta-personaje {
     max-width: 97%;
     margin-bottom: 0;
   }
   .grid-container2 {
     grid-template-rows: 500px 400px;
-    grid-template-columns: 300px 465px;
+    grid-template-columns: 300px auto;
   }
   .grid-container2 .foto-personaje {
     grid-row: 1/2;
@@ -600,8 +582,203 @@ h2 {
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
   }
+  /* Pagina de Armas */
+  h2 {
+    margin-left: 0;
+  }
+  .busqueda {
+    margin-left: 10px;
+  }
+  .carta-arma {
+    max-width: 97%;
+    margin-bottom: 0;
+  }
+  .grid-container3 {
+    grid-template-rows: 300px auto 150px;
+    grid-template-columns: 380px auto;
+  }
+  .grid-container3 .imgarma img {
+    width: 320px;
+    height: auto;
+    margin: 0;
+  }
+  .grid-container3 .descripcion-arma {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: rgba(16, 7, 54, 0.9);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+  }
+  .grid-container3 .descripcion-arma p {
+    margin: 5px;
+    max-height: 250px;
+    overflow: scroll;
+  }
+  .grid-container3 .tabla-armas {
+    grid-row: 2/4;
+    grid-column: 1/2;
+  }
+  .grid-container3 .refinamiento {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    border-radius: 5px;
+    align-self: flex-end;
+  }
+  .grid-container3 .refinamiento p {
+    margin: 2px;
+    overflow: scroll;
+  }
+  .grid-container3 .reflvl {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: aliceblue;
+    border-radius: 3px;
+    align-self: flex-start;
+  }
+  /* Página de Artefactos */
+  .grid-container4 {
+    grid-template-rows: 50px 300px 50px 450px;
+    grid-template-columns: 450px auto;
+    align-items: center;
+  }
+  .grid-container4 .nombre-tabla1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: left;
+  }
+  .grid-container4 .tabla-estprin {
+    width: 200px;
+    justify-self: left;
+    margin-left: 15px;
+  }
+  .grid-container4 .stats {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: right;
+  }
+  .grid-container4 .descripcion-stat {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    border-radius: 5px;
+  }
+  .grid-container4 .nombre-tabla2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: left;
+  }
+  .grid-container4 .tabla-estsec {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    width: 200px;
+    justify-self: left;
+    margin-left: 30px;
+  }
+  .grid-container4 .name-art {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  .grid-container4 .artefacto {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  .grid-container4 .artefacto img {
+    width: 200px;
+    height: auto;
+  }
+  /* Página de Contacto */
+  .grid-container5 {
+    grid-template-rows: 120px 80px 250px 350px;
+    grid-template-columns: 600px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .grid-container5 .titulo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    margin-bottom: 0;
+  }
+  .grid-container5 .mensajecont {
+    max-width: auto;
+  }
+  .grid-container5 .bennett {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    align-self: center;
+  }
+  .grid-container5 .bennett img {
+    width: 200px;
+  }
+  .grid-container5 .formulario {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  .grid-container5 .formulario form {
+    background-color: rgba(217, 4, 39, 0.8901960784);
+    color: beige;
+    font-weight: bold;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    border-radius: 5px;
+  }
 }
 @media (max-width: 480px) {
+  header nav ul {
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  /* index */
+  #grid-container1 {
+    display: grid;
+    grid-template-rows: repeat(4, 200px 160px);
+    grid-template-columns: auto;
+  }
+  #grid-container1 .imgin-a img {
+    width: 280px;
+    height: auto;
+  }
+  #grid-container1 .imgin-b {
+    grid-row: 3/4;
+  }
+  #grid-container1 .imgin-c img {
+    width: auto;
+    max-height: 180px;
+  }
+  #grid-container1 .imgin-d {
+    grid-row: 7/8;
+  }
+  #grid-container1 .imgin-d img {
+    max-height: 180px;
+    width: auto;
+  }
+  #grid-container1 .txtin-a p {
+    max-height: 100px;
+    overflow: scroll;
+    text-align: left;
+  }
+  #grid-container1 .txtin-b p {
+    max-height: 100px;
+    overflow: scroll;
+    text-align: left;
+  }
+  #grid-container1 .txtin-c p {
+    max-height: 100px;
+    overflow: scroll;
+    text-align: left;
+  }
+  #grid-container1 .txtin-d p {
+    max-height: 100px;
+    overflow: scroll;
+    text-align: left;
+  }
+  /* Página de Personajes */
   .carta-personaje {
     max-width: 95%;
     margin-bottom: 0;
@@ -630,62 +807,7 @@ h2 {
     width: 450px;
     height: 300px;
   }
-}
-/* Estilos de la Pagina de Armas */
-@media (max-width: 768px) {
-  h2 {
-    margin-left: 0;
-  }
-  .busqueda {
-    margin-left: 10px;
-  }
-  .carta-arma {
-    max-width: 97%;
-    margin-bottom: 0;
-  }
-  .grid-container3 {
-    grid-template-rows: 300px 200px 150px;
-    grid-template-columns: 380px 380px;
-  }
-  .imgarma img {
-    width: 350px;
-    height: auto;
-    margin: 0;
-  }
-  .descripcion-arma {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    background-color: rgba(16, 7, 54, 0.9);
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 5px 5px black;
-  }
-  .descripcion-arma p {
-    margin: 5px;
-  }
-  .tabla-armas {
-    grid-row: 2/4;
-    grid-column: 1/2;
-  }
-  .refinamiento {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    border-radius: 5px;
-    align-self: flex-end;
-  }
-  .refinamiento p {
-    margin: 2px;
-  }
-  .reflvl {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    background-color: aliceblue;
-    border-radius: 3px;
-    align-self: flex-start;
-  }
-}
-@media (max-width: 480px) {
+  /* Pagina de Armas */
   h2 {
     margin-left: 0;
   }
@@ -701,12 +823,12 @@ h2 {
     grid-template-rows: 300px 200px 350px 150px 50px;
     grid-template-columns: auto;
   }
-  .imgarma img {
+  .grid-container3 .imgarma img {
     width: 300px;
     height: auto;
     margin: 0;
   }
-  .descripcion-arma {
+  .grid-container3 .descripcion-arma {
     grid-row: 2/3;
     background-color: rgba(16, 7, 54, 0.9);
     color: white;
@@ -716,170 +838,91 @@ h2 {
     grid-row: 2/3;
     grid-column: 1/2;
   }
-  .descripcion-arma p {
+  .grid-container3 .descripcion-arma p {
     margin: 5px;
   }
-  .tabla-armas {
+  .grid-container3 .tabla-armas {
     grid-row: 3/4;
     grid-column: 1/2;
   }
-  .refinamiento {
+  .grid-container3 .refinamiento {
     grid-row: 4/5;
     grid-column: 1/2;
     border-radius: 5px;
   }
-  .refinamiento p {
+  .grid-container3 .refinamiento p {
     margin: 2px;
   }
-  .reflvl {
+  .grid-container3 .reflvl {
     grid-row: 5/6;
     grid-column: 1/2;
     background-color: aliceblue;
     border-radius: 3px;
   }
-}
-/* Estilos de la Pagina de Artefactos */
-@media (max-width: 768px) {
-  .grid-container4 {
-    grid-template-rows: 50px 300px 50px 450px;
-    grid-template-columns: 420px 340px;
-    justify-content: center;
-    align-items: center;
-  }
-  .tabla-estprin {
-    justify-self: left;
-    width: 200px;
-  }
-  .stats {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    justify-self: right;
-  }
-  .descripcion-stat {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    border-radius: 5px;
-  }
-  .nombre-tabla2 {
-    grid-row: 3/4;
-    grid-column: 1/2;
-  }
-  .tabla-estsec {
-    grid-row: 4/5;
-    grid-column: 1/2;
-    justify-self: left;
-    width: 200px;
-  }
-  .name-art {
-    grid-row: 3/4;
-    grid-column: 2/3;
-  }
-  .artefacto {
-    grid-row: 4/5;
-    align-self: center;
-  }
-  .artefacto img {
-    width: 200px;
-    height: auto;
-  }
-}
-@media (max-width: 480px) {
+  /* Página de Artefactos */
   .grid-container4 {
     grid-template-rows: 50px 300px 50px auto 50px 450px 50px 350px;
     grid-template-columns: auto;
   }
-  .stats {
+  .grid-container4 .stats {
     grid-row: 3/4;
     grid-column: 1/2;
     justify-self: right;
   }
-  .descripcion-stat {
+  .grid-container4 .descripcion-stat {
     grid-row: 4/5;
     grid-column: 1/2;
     border-radius: 5px;
     overflow: scroll;
   }
-  .nombre-tabla2 {
+  .grid-container4 .nombre-tabla2 {
     grid-row: 5/6;
     grid-column: 1/2;
   }
-  .tabla-estsec {
+  .grid-container4 .tabla-estsec {
     grid-row: 6/7;
     grid-column: 1/2;
   }
-  .name-art {
+  .grid-container4 .name-art {
     grid-row: 7/8;
     grid-column: 1/2;
   }
-  .artefacto {
+  .grid-container4 .artefacto {
     grid-row: 8/9;
     align-self: center;
   }
-  .artefacto img {
+  .grid-container4 .artefacto img {
     width: 200px;
     height: auto;
   }
-}
-/* Estilos de la Pagina de Contacto */
-/* Sigo teniendo problemas con el footer para estilo web, no me queda al final de la pagina */
-@media (max-width: 768px) {
-  .titulo3 {
-    max-width: 95%;
-    margin-bottom: 0;
-  }
-  .grid-container5 {
-    grid-template-rows: 120px 80px 250px 350px;
-    grid-template-columns: auto;
-    justify-items: center;
-  }
-  .bennett {
-    grid-row: 3/4;
-    grid-column: 1/2;
-    align-self: center;
-  }
-  .bennett img {
-    width: 200px;
-  }
-  .formulario {
-    grid-row: 4/5;
-    align-self: center;
-  }
-  .formulario form {
-    background-color: rgba(217, 4, 39, 0.8901960784);
-    color: beige;
-    font-weight: bold;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    border-radius: 5px;
-  }
-}
-@media (max-width: 480px) {
-  .titulo3 {
-    max-width: 450px;
-    margin-bottom: 0;
-    text-align: start;
-  }
-  .mensajecont {
-    max-width: 450px;
-  }
+  /* Página de Contacto */
   .grid-container5 {
     grid-template-rows: 120px 80px 250px 350px;
     grid-template-columns: auto;
     justify-items: left;
   }
-  .bennett {
+  .grid-container5 .titulo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    margin-bottom: 0;
+  }
+  .grid-container5 .mensajecont {
+    max-width: 450px;
+  }
+  .grid-container5 .bennett {
     grid-row: 3/4;
     grid-column: 1/2;
   }
-  .bennett img {
+  .grid-container5 .bennett img {
     width: 200px;
   }
-  .formulario {
+  .grid-container5 .formulario {
     grid-row: 4/5;
+    justify-self: center;
   }
-  .formulario form {
+  .grid-container5 .formulario form {
     background-color: rgba(217, 4, 39, 0.8901960784);
     color: beige;
     font-weight: bold;
@@ -889,19 +932,8 @@ h2 {
     max-height: fit-content;
     border-radius: 5px;
   }
-  .formulario form div textarea {
+  .grid-container5 .formulario form div textarea {
     max-width: 440px;
   }
 }
-/* Estilo del Footer */
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-footer p {
-  margin-bottom: 0;
-}/*# sourceMappingURL=style.css.map */
+/* Sigo teniendo problemas con el footer para estilo web, no me queda al final de la pagina *//*# sourceMappingURL=style.css.map */

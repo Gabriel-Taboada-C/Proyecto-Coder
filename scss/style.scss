@@ -18,49 +18,34 @@ body {
   background-attachment: fixed;
 }
 
-/* Estilo del Encabezado */
+/* Estilos Generales */
 
-header nav ul {
-  display: flex;
-  width: auto;
-  background-color: black;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-header nav ul li {
-  list-style: none;
-  margin: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-header nav ul li a:hover {
-  color: yellow;
-}
-
-@media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    height: fit-content;
+header {
+  nav {
+    ul {
+      display: flex;
+      width: auto;
+      background-color: black;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        margin: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: yellow;
+          }
+        }
+      }
+    }
   }
 }
-
-@media (max-width: 480px) {
-  header nav ul {
-    flex-direction: column;
-    height: fit-content;
-  }
-}
-
-/* Estilos de la Pagina de Inicio */
 
 h1 {
   font-family: "Gothic", serif;
@@ -70,14 +55,92 @@ h1 {
   padding: 10px;
 }
 
-/* Estilos de la Pagina de Personajes */
-
 h2 {
   font-size: 40px;
   margin-left: 30px;
 }
 
+td,
+th {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+tr {
+  background-color: rgba(250, 235, 215, 0.9);
+  &:hover {
+    background-color: orange;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* MEDIA QUERIES */
+
+/* tablet */
+
 @media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    height: fit-content;
+  }
+  /* index */
+
+  .carousel .carousel-item {
+    height: auto;
+  }
+
+  #grid-container1 {
+    display: grid;
+    grid-template-rows: repeat(4, 250px);
+    grid-template-columns: repeat(2, auto);
+  }
+
+  #grid-container1 .imgin-a img {
+    width: 280px;
+    height: auto;
+  }
+
+  #grid-container1 .imgin-b img {
+    width: 280px;
+    height: auto;
+  }
+
+  #grid-container1 .txtin-a p {
+    max-height: 180px;
+    overflow: scroll;
+    text-align: left;
+  }
+
+  #grid-container1 .txtin-b p {
+    max-height: 180px;
+    overflow: scroll;
+    text-align: left;
+  }
+
+  #grid-container1 .txtin-c p {
+    max-height: 180px;
+    overflow: scroll;
+    text-align: left;
+  }
+
+  #grid-container1 .txtin-d p {
+    max-height: 180px;
+    overflow: scroll;
+    text-align: left;
+  }
+
+  /* Página de Personajes */
+
   .carta-personaje {
     max-width: 97%;
     margin-bottom: 0;
@@ -85,7 +148,7 @@ h2 {
 
   .grid-container2 {
     grid-template-rows: 500px 400px;
-    grid-template-columns: 300px 465px;
+    grid-template-columns: 300px auto;
   }
 
   .grid-container2 .foto-personaje {
@@ -121,9 +184,245 @@ h2 {
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
   }
+
+  /* Pagina de Armas */
+
+  h2 {
+    margin-left: 0;
+  }
+
+  .busqueda {
+    margin-left: 10px;
+  }
+
+  .carta-arma {
+    max-width: 97%;
+    margin-bottom: 0;
+  }
+
+  .grid-container3 {
+    grid-template-rows: 300px auto 150px;
+    grid-template-columns: 380px auto;
+  }
+
+  .grid-container3 .imgarma img {
+    width: 320px;
+    height: auto;
+    margin: 0;
+  }
+
+  .grid-container3 .descripcion-arma {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: rgba(16, 7, 54, 0.9);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+  }
+
+  .grid-container3 .descripcion-arma p {
+    margin: 5px;
+    max-height: 250px;
+    overflow: scroll;
+  }
+
+  .grid-container3 .tabla-armas {
+    grid-row: 2/4;
+    grid-column: 1/2;
+  }
+
+  .grid-container3 .refinamiento {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    border-radius: 5px;
+    align-self: flex-end;
+  }
+
+  .grid-container3 .refinamiento p {
+    margin: 2px;
+    overflow: scroll;
+  }
+
+  .grid-container3 .reflvl {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: aliceblue;
+    border-radius: 3px;
+    align-self: flex-start;
+  }
+
+  /* Página de Artefactos */
+
+  .grid-container4 {
+    grid-template-rows: 50px 300px 50px 450px;
+    grid-template-columns: 450px auto;
+    align-items: center;
+  }
+
+  .grid-container4 .nombre-tabla1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: left;
+  }
+
+  .grid-container4 .tabla-estprin {
+    width: 200px;
+    justify-self: left;
+    margin-left: 15px;
+  }
+
+  .grid-container4 .stats {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: right;
+  }
+
+  .grid-container4 .descripcion-stat {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    border-radius: 5px;
+  }
+
+  .grid-container4 .nombre-tabla2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: left;
+  }
+
+  .grid-container4 .tabla-estsec {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    width: 200px;
+    justify-self: left;
+    margin-left: 30px;
+  }
+
+  .grid-container4 .name-art {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+
+  .grid-container4 .artefacto {
+    grid-row: 4/5;
+    align-self: center;
+  }
+
+  .grid-container4 .artefacto img {
+    width: 200px;
+    height: auto;
+  }
+
+  /* Página de Contacto */
+
+  .grid-container5 {
+    grid-template-rows: 120px 80px 250px 350px;
+    grid-template-columns: 600px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .grid-container5 .titulo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    margin-bottom: 0;
+  }
+
+  .grid-container5 .mensajecont {
+    max-width: auto;
+  }
+
+  .grid-container5 .bennett {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    align-self: center;
+  }
+
+  .grid-container5 .bennett img {
+    width: 200px;
+  }
+
+  .grid-container5 .formulario {
+    grid-row: 4/5;
+    align-self: center;
+  }
+
+  .grid-container5 .formulario form {
+    background-color: #d90427e3;
+    color: beige;
+    font-weight: bold;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 480px) {
+  header nav ul {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  /* index */
+
+  #grid-container1 {
+    display: grid;
+    grid-template-rows: repeat(4, 200px 160px);
+    grid-template-columns: auto;
+  }
+
+  #grid-container1 .imgin-a img {
+    width: 280px;
+    height: auto;
+  }
+
+  #grid-container1 .imgin-b {
+    grid-row: 3/4;
+  }
+
+  #grid-container1 .imgin-c img {
+    width: auto;
+    max-height: 180px;
+  }
+
+  #grid-container1 .imgin-d {
+    grid-row: 7/8;
+  }
+
+  #grid-container1 .imgin-d img {
+    max-height: 180px;
+    width: auto;
+  }
+
+  #grid-container1 .txtin-a p {
+    max-height: 100px;
+    overflow: scroll;
+    text-align: left;
+  }
+
+  #grid-container1 .txtin-b p {
+    max-height: 100px;
+    overflow: scroll;
+    text-align: left;
+  }
+
+  #grid-container1 .txtin-c p {
+    max-height: 100px;
+    overflow: scroll;
+    text-align: left;
+  }
+
+  #grid-container1 .txtin-d p {
+    max-height: 100px;
+    overflow: scroll;
+    text-align: left;
+  }
+
+  /* Página de Personajes */
+
   .carta-personaje {
     max-width: 95%;
     margin-bottom: 0;
@@ -157,75 +456,9 @@ h2 {
     width: 450px;
     height: 300px;
   }
-}
 
-/* Estilos de la Pagina de Armas */
+  /* Pagina de Armas */
 
-@media (max-width: 768px) {
-  h2 {
-    margin-left: 0;
-  }
-
-  .busqueda {
-    margin-left: 10px;
-  }
-
-  .carta-arma {
-    max-width: 97%;
-    margin-bottom: 0;
-  }
-
-  .grid-container3 {
-    grid-template-rows: 300px 200px 150px;
-    grid-template-columns: 380px 380px;
-  }
-
-  .imgarma img {
-    width: 350px;
-    height: auto;
-    margin: 0;
-  }
-
-  .descripcion-arma {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    background-color: rgba(16, 7, 54, 0.9);
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 5px 5px black;
-  }
-
-  .descripcion-arma p {
-    margin: 5px;
-  }
-
-  .tabla-armas {
-    grid-row: 2/4;
-    grid-column: 1/2;
-  }
-
-  .refinamiento {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    border-radius: 5px;
-    align-self: flex-end;
-  }
-
-  .refinamiento p {
-    margin: 2px;
-  }
-
-  .reflvl {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    background-color: aliceblue;
-    border-radius: 3px;
-    align-self: flex-start;
-  }
-}
-
-@media (max-width: 480px) {
   h2 {
     margin-left: 0;
   }
@@ -245,13 +478,13 @@ h2 {
     grid-template-columns: auto;
   }
 
-  .imgarma img {
+  .grid-container3 .imgarma img {
     width: 300px;
     height: auto;
     margin: 0;
   }
 
-  .descripcion-arma {
+  .grid-container3 .descripcion-arma {
     grid-row: 2/3;
     background-color: rgba(16, 7, 54, 0.9);
     color: white;
@@ -262,184 +495,78 @@ h2 {
     grid-column: 1/2;
   }
 
-  .descripcion-arma p {
+  .grid-container3 .descripcion-arma p {
     margin: 5px;
   }
 
-  .tabla-armas {
+  .grid-container3 .tabla-armas {
     grid-row: 3/4;
     grid-column: 1/2;
   }
 
-  .refinamiento {
+  .grid-container3 .refinamiento {
     grid-row: 4/5;
     grid-column: 1/2;
     border-radius: 5px;
   }
 
-  .refinamiento p {
+  .grid-container3 .refinamiento p {
     margin: 2px;
   }
 
-  .reflvl {
+  .grid-container3 .reflvl {
     grid-row: 5/6;
     grid-column: 1/2;
     background-color: aliceblue;
     border-radius: 3px;
   }
-}
 
-/* Estilos de la Pagina de Artefactos */
+  /* Página de Artefactos */
 
-@media (max-width: 768px) {
-  .grid-container4 {
-    grid-template-rows: 50px 300px 50px 450px;
-    grid-template-columns: 420px 340px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tabla-estprin {
-    justify-self: left;
-    width: 200px;
-  }
-
-  .stats {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    justify-self: right;
-  }
-
-  .descripcion-stat {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    border-radius: 5px;
-  }
-
-  .nombre-tabla2 {
-    grid-row: 3/4;
-    grid-column: 1/2;
-  }
-
-  .tabla-estsec {
-    grid-row: 4/5;
-    grid-column: 1/2;
-    justify-self: left;
-    width: 200px;
-  }
-
-  .name-art {
-    grid-row: 3/4;
-    grid-column: 2/3;
-  }
-
-  .artefacto {
-    grid-row: 4/5;
-    align-self: center;
-  }
-
-  .artefacto img {
-    width: 200px;
-    height: auto;
-  }
-}
-
-@media (max-width: 480px) {
   .grid-container4 {
     grid-template-rows: 50px 300px 50px auto 50px 450px 50px 350px;
     grid-template-columns: auto;
   }
 
-  .stats {
+  .grid-container4 .stats {
     grid-row: 3/4;
     grid-column: 1/2;
     justify-self: right;
   }
 
-  .descripcion-stat {
+  .grid-container4 .descripcion-stat {
     grid-row: 4/5;
     grid-column: 1/2;
     border-radius: 5px;
     overflow: scroll;
   }
 
-  .nombre-tabla2 {
+  .grid-container4 .nombre-tabla2 {
     grid-row: 5/6;
     grid-column: 1/2;
   }
 
-  .tabla-estsec {
+  .grid-container4 .tabla-estsec {
     grid-row: 6/7;
     grid-column: 1/2;
   }
 
-  .name-art {
+  .grid-container4 .name-art {
     grid-row: 7/8;
     grid-column: 1/2;
   }
 
-  .artefacto {
+  .grid-container4 .artefacto {
     grid-row: 8/9;
     align-self: center;
   }
 
-  .artefacto img {
+  .grid-container4 .artefacto img {
     width: 200px;
     height: auto;
   }
-}
 
-/* Estilos de la Pagina de Contacto */
-
-/* Sigo teniendo problemas con el footer para estilo web, no me queda al final de la pagina */
-
-@media (max-width: 768px) {
-  .titulo3 {
-    max-width: 95%;
-    margin-bottom: 0;
-  }
-
-  .grid-container5 {
-    grid-template-rows: 120px 80px 250px 350px;
-    grid-template-columns: auto;
-    justify-items: center;
-  }
-
-  .bennett {
-    grid-row: 3/4;
-    grid-column: 1/2;
-    align-self: center;
-  }
-
-  .bennett img {
-    width: 200px;
-  }
-
-  .formulario {
-    grid-row: 4/5;
-    align-self: center;
-  }
-
-  .formulario form {
-    background-color: #d90427e3;
-    color: beige;
-    font-weight: bold;
-    max-width: fit-content;
-    max-height: fit-content;
-    border-radius: 5px;
-  }
-}
-
-@media (max-width: 480px) {
-  .titulo3 {
-    max-width: 450px;
-    margin-bottom: 0;
-    text-align: start;
-  }
-
-  .mensajecont {
-    max-width: 450px;
-  }
+  /* Página de Contacto */
 
   .grid-container5 {
     grid-template-rows: 120px 80px 250px 350px;
@@ -447,20 +574,33 @@ h2 {
     justify-items: left;
   }
 
-  .bennett {
+  .grid-container5 .titulo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    margin-bottom: 0;
+  }
+
+  .grid-container5 .mensajecont {
+    max-width: 450px;
+  }
+
+  .grid-container5 .bennett {
     grid-row: 3/4;
     grid-column: 1/2;
   }
 
-  .bennett img {
+  .grid-container5 .bennett img {
     width: 200px;
   }
 
-  .formulario {
+  .grid-container5 .formulario {
     grid-row: 4/5;
+    justify-self: center;
   }
 
-  .formulario form {
+  .grid-container5 .formulario form {
     background-color: #d90427e3;
     color: beige;
     font-weight: bold;
@@ -469,21 +609,9 @@ h2 {
     border-radius: 5px;
   }
 
-  .formulario form div textarea {
+  .grid-container5 .formulario form div textarea {
     max-width: 440px;
   }
 }
 
-/* Estilo del Footer */
-
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-footer p {
-  margin-bottom: 0;
-}
+/* Sigo teniendo problemas con el footer para estilo web, no me queda al final de la pagina */
