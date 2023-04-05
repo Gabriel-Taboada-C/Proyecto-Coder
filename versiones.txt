@@ -49,7 +49,7 @@ Agregados hovers al formulario para mejor legibilidad
 
 Carpeta imagenes:
 Se agrego imagen background bennett
-Se elimino imagen constelacion y diluc(repetida)
+Se elimino imagen venti, constelacion y diluc(repetida)
 
 Version 3:
 
@@ -80,5 +80,8 @@ Scss:
 Se transformó el código css a sintaxis SASS.
 Se subdividieron los estilos de cada página para una mejor legibilidad del código.
 
-
+SEO:
+Se agrego un sitemap.
+Se optimizaron las imagenes mediante la herramienta de compresion.
+Se agrego el atributo "alt" para cada imagen del proyecto.
 
