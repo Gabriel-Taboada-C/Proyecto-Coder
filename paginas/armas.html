@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Armas</title>
     <meta
       name="description"
       content="Armas de Genshin Impact: descripciones, tipos, habilidades, refinamientos, estadísticas."
@@ -15,6 +14,13 @@
     />
     <link rel="stylesheet" href="../scss/style.css" />
     <link rel="shorcut icon" href="../imagenes/icon-index.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Armas - Lápida del Lobo</title>
   </head>
   <body>
     <header>
@@ -48,26 +54,36 @@
 
     <div class="opciones">
       <img src="../imagenes/mandoble.webp" alt="icono arma 1" />
-      <img src="../imagenes/espada.webp" alt="icono arma 2" />
-      <img src="../imagenes/lanza.webp" alt="icono arma 3" />
-      <img src="../imagenes/arco.webp" alt="icono arma 4" />
-      <img src="../imagenes/catalizador.webp" alt="icono arma 5" />
+      <a href="../paginas/espada.html">
+        <img src="../imagenes/espada.webp" alt="icono arma 2" />
+      </a>
+      <a href="../paginas/lanza.html">
+        <img src="../imagenes/lanza.webp" alt="icono arma 3" />
+      </a>
+      <a href="../paginas/arco.html">
+        <img src="../imagenes/arco.webp" alt="icono arma 4" />
+      </a>
+      <a href="../paginas/catalizador.html">
+        <img src="../imagenes/catalizador.webp" alt="icono arma 5" />
+      </a>
     </div>
 
-    <div class="carta-arma">
-      <div class="carta-texto">
-        <h3>Lapida de Lobo</h3>
-        <h4>Claymore</h4>
-        <p class="substat">Ataque %</p>
-      </div>
-    </div>
-
-    <div class="grid-container3">
-      <div class="imgarma">
-        <img src="../imagenes/lapidadellobo.png" alt="aspecto arma 1" />
+    <div class="container3">
+      <div class="container3__crdweapon crdweapon">
+        <div class="crdweapon crdweapon__txt">
+          <h3>Lápida del Lobo</h3>
+          <h4>Claymore</h4>
+          <p>Ataque %</p>
+        </div>
       </div>
 
-      <div class="descripcion-arma">
+      <img
+        src="../imagenes/lapidadellobo.png"
+        alt="aspecto arma 1"
+        class="container3__img"
+      />
+
+      <div class="container3__description">
         <p>
           Una gran espada que fue usada por el Lobo de los Caballeros de
           Favonius. Originariamente, era solo una pesada lámina de hierro que le
@@ -77,72 +93,218 @@
         </p>
       </div>
 
-      <div class="tabla-armas">
-        <table>
-          <tr>
-            <th>Nivel</th>
-            <th>Ataque Base</th>
-            <th>Atributo Sec.</th>
-          </tr>
-          <tr>
-            <td>20</td>
-            <td>122/153</td>
-            <td>19.1%</td>
-          </tr>
-          <tr>
-            <td>40</td>
-            <td>235/266</td>
-            <td>27.8%</td>
-          </tr>
-          <tr>
-            <td>50</td>
-            <td>308/340</td>
-            <td>32.2%</td>
-          </tr>
-          <tr>
-            <td>60</td>
-            <td>382/414</td>
-            <td>36.5%</td>
-          </tr>
-          <tr>
-            <td>70</td>
-            <td>457/488</td>
-            <td>40.9%</td>
-          </tr>
-          <tr>
-            <td>80</td>
-            <td>532/563</td>
-            <td>45.3%</td>
-          </tr>
-          <tr>
-            <td>90</td>
-            <td>608</td>
-            <td>49.6%</td>
-          </tr>
-        </table>
-      </div>
+      <table class="container3__tbl">
+        <tr>
+          <th>Nivel</th>
+          <th>Ataque Base</th>
+          <th>Atributo Sec.</th>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>122 / 153</td>
+          <td>19.1%</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>235 / 266</td>
+          <td>27.8%</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>308 / 340</td>
+          <td>32.2%</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>382 / 414</td>
+          <td>36.5%</td>
+        </tr>
+        <tr>
+          <td>70</td>
+          <td>457 / 488</td>
+          <td>40.9%</td>
+        </tr>
+        <tr>
+          <td>80</td>
+          <td>532 / 563</td>
+          <td>45.3%</td>
+        </tr>
+        <tr>
+          <td>90</td>
+          <td>608</td>
+          <td>49.6%</td>
+        </tr>
+      </table>
 
-      <div class="refinamiento">
-        <p>
-          Aumenta el ATQ en un <span>20%</span>. Al atacar a enemigos con menos
-          del 30% de su Vida, aumenta el ATQ de todos los miembros del equipo en
-          un 40% durante 12 s. Este efecto solo puede ocurrir una vez cada 30 s.
-        </p>
-      </div>
-
-      <div class="reflvl">
-        <input type="radio" name="ref" id="ref1" /> Ref 1
-        <input type="radio" name="ref" id="ref2" /> Ref 2
-        <input type="radio" name="ref" id="ref3" /> Ref 3
-        <input type="radio" name="ref" id="ref4" /> Ref 4
-        <input type="radio" name="ref" id="ref5" /> Ref 5
+      <div class="container3__refin">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <strong>Refinamiento 1</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Aumenta el ATQ en un <span>20%</span>. Al atacar a enemigos con
+                menos del 30% de su Vida, aumenta el ATQ de todos los miembros
+                del equipo en un 40% durante 12 s. Este efecto solo puede
+                ocurrir una vez cada 30 s.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <strong>Refinamiento 2</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Aumenta el ATQ en un <span>25%</span>. Al atacar a enemigos con
+                menos del 30% de su Vida, aumenta el ATQ de todos los miembros
+                del equipo en un 40% durante 12 s. Este efecto solo puede
+                ocurrir una vez cada 30 s.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <strong>Refinamiento 3</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Aumenta el ATQ en un <span>30%</span>. Al atacar a enemigos con
+                menos del 30% de su Vida, aumenta el ATQ de todos los miembros
+                del equipo en un 40% durante 12 s. Este efecto solo puede
+                ocurrir una vez cada 30 s.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <strong>Refinamiento 4</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Aumenta el ATQ en un <span>35%</span>. Al atacar a enemigos con
+                menos del 30% de su Vida, aumenta el ATQ de todos los miembros
+                del equipo en un 40% durante 12 s. Este efecto solo puede
+                ocurrir una vez cada 30 s.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <strong>Refinamiento 5</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Aumenta el ATQ en un <span>40%</span>. Al atacar a enemigos con
+                menos del 30% de su Vida, aumenta el ATQ de todos los miembros
+                del equipo en un 40% durante 12 s. Este efecto solo puede
+                ocurrir una vez cada 30 s.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <footer>
-      <p>Copyright 2023 [Gabriel Taboada]</p>
-      <p>tel: +280 4329972</p>
-      <p>email: gabrieltc96@gmail.com</p>
+      <div class="footer__logo">
+        <img src="../imagenes/icon-index.png" alt="logo footer" />
+      </div>
+      <div class="footer__links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./paginas/personajes.html">Personajes</a></li>
+          <li><a href="./paginas/armas.html">Armas</a></li>
+          <li><a href="./paginas/artefactos.html">Artefactos</a></li>
+          <li><a href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h3>Info</h3>
+        <p>Copyright 2023 [Gabriel Taboada]</p>
+        <p>tel: +280 4329972</p>
+        <p>email: gabrieltc96@gmail.com</p>
+      </div>
+      <div class="footer__social">
+        <h3>Redes sociales</h3>
+        <img src="../imagenes/instagram.png" alt="instagram logo" />
+        <img src="../imagenes/twitter.png" alt="twitter logo" />
+        <img src="../imagenes/facebook.png" alt="facebook logo" />
+        <img src="../imagenes/whatsapp.png" alt="whatsapp logo" />
+      </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

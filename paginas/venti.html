@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personajes de Genshin Impact: descripciones, elementos, presentacion de personaje."
+    />
+    <meta
+      name="keywords"
+      content="genshin, impact, armas, artefactos, personajes"
+    />
+    <link rel="stylesheet" href="../scss/style.css" />
+    <link rel="shorcut icon" href="../imagenes/icon-index.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Personajes - Venti</title>
+  </head>
+  <body class="body--venti">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./personajes.html">Personajes</a></li>
+          <li><a href="./armas.html">Armas</a></li>
+          <li><a href="./artefactos.html">Artefactos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="titulo2">
+      <h2>Personajes</h2>
+    </div>
+
+    <div class="busqueda">
+      <input type="text" placeholder="Nombre del personaje" />
+      <label for="tipo-de-elemento"></label>
+      <select name="elementos" id="tipo-de-elemento">
+        <option value="1">Anemo</option>
+        <option value="2">Cryo</option>
+        <option value="3">Electro</option>
+        <option value="4">Geo</option>
+        <option value="5">Hydro</option>
+        <option value="6">Pyro</option>
+        <option value="7" selected hidden>Elemento</option>
+      </select>
+
+      <label for="tipo-de-arma"></label>
+      <select name="armas" id="tipo-de-arma">
+        <option value="1">Espada Ligera</option>
+        <option value="2">Lanza</option>
+        <option value="3">Claymore</option>
+        <option value="4">Arco</option>
+        <option value="5">Catalizador</option>
+        <option value="6" selected hidden>Arma Principal</option>
+      </select>
+    </div>
+
+    <div class="opciones">
+      <a href="../paginas/personajes.html">
+        <img src="../imagenes/dilucic.webp" alt="icono personaje 1" />
+      </a>
+      <a href="../paginas/jean.html">
+        <img src="../imagenes/jeanic.webp" alt="icono personaje 2" />
+      </a>
+      <a href="../paginas/kaeya.html">
+        <img src="../imagenes/kaeyaic.webp" alt="icono personaje 3" />
+      </a>
+      <a href="../paginas/mona.html">
+        <img src="../imagenes/monaic.webp" alt="icono personaje 4" />
+      </a>
+      <a href="../paginas/razor.html">
+        <img src="../imagenes/razoric.webp" alt="icono personaje 5" />
+      </a>
+      <a href="../paginas/noelle.html">
+        <img src="../imagenes/noelleic.webp" alt="icono personaje 6" />
+      </a>
+      <img src="../imagenes/ventiic.webp" alt="icono personaje 7" />
+    </div>
+
+    <div class="container2">
+      <div class="container2__crd container2__crd--venti crd">
+        <div class="crd crd__txt">
+          <h3>Venti</h3>
+          <h4>Arconte Anemo</h4>
+          <p>★★★★★</p>
+        </div>
+      </div>
+
+      <img
+        src="../imagenes/Venti.webp"
+        alt="aspecto personaje 7"
+        class="container2__img"
+      />
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/TSsWsCdiiPI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="container2__iframe"
+      ></iframe>
+
+      <div class="container2__description">
+        <p>
+          Es un bardo misterioso al que le gusta recitar tanto viejos poemas
+          como nuevas canciones de moda. De espíritu libre y amante del vino, es
+          el actual recipiente mortal de Barbatos, el Arconte Anemo.
+        </p>
+      </div>
+
+      <div class="container2__talent">
+        <div class="accordion" id="accordionExample">
+          <h2>Talentos</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <img src="../imagenes/Atq_Venti.webp" alt="Ataque Normal" />
+                <strong>Puntería divina</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Ataque Normal:</strong> Realiza hasta 6 disparos
+                consecutivos con arco. <strong>Ataque Cargado:</strong> Dispara
+                un Tiro preciso que inflige mayor daño. Al apuntar, se
+                acumularán vientos favorables en la punta de flecha. Una flecha
+                con fuerza del viento totalmente cargada infligirá Daño Anemo.
+                <strong>Ataque Descendente:</strong> Dispara una lluvia de
+                flechas desde el aire y desciende rápidamente, causando daño a
+                distancia al impactar en el suelo.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <img
+                  src="../imagenes/Hab_Venti.webp"
+                  alt="Habilidad Elemental"
+                />
+                <strong>Sonata celestial</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                ¡Oh viento sobre el que vuelan todos los himnos y cantos, lleva
+                a estos caminantes de la tierra hacia los cielos!
+                <strong>Pulsar una vez</strong> Invoca un campo de viento en la
+                ubicación del enemigo, infligiendo Daño Anemo de Área y lanzando
+                a los enemigos por el aire.
+                <strong>Mantener pulsado</strong> Invoca un campo de viento aún
+                más grande con Venti como epicentro, infligiendo Daño Anemo de
+                Área y lanzando a los enemigos afectados al aire. Después de
+                soltar esta habilidad, Venti cabalga el viento en el aire.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <img
+                  src="../imagenes/Def_Venti.webp"
+                  alt="Habilidad Definitiva"
+                />
+                <strong>Gran Oda del Viento</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Dispara una flecha hecha de innumerables vientos fusionados,
+                creando un enorme Ojo de la Tormenta que absorbe objetos y
+                enemigos a su paso e inflige Daño Anemo. Cambio elemental Si el
+                Ojo de la tormenta entra en contacto con
+                Hydro/Pyro/Cryo/Electro, inflige Daño elemental adicional de ese
+                tipo. El cambio elemental solo puede ocurrir una vez por uso.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <img
+                  src="../imagenes/Pas1_Venti.webp"
+                  alt="Habilidad Pasiva 1"
+                />
+                <strong>Abraza los vientos</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Mantener pulsado la <strong>Sonata celestial</strong> genera
+                corrientes de viento ascendentes con una duración de 20 s.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <img
+                  src="../imagenes/Pas2_Venti.webp"
+                  alt="Habilidad Pasiva 2"
+                />
+                <strong>Ojo del huracán</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Después de que termine el efecto de Gran Oda del Viento, Venti
+                restaurará 15 puntos de Energía Elemental. Si ocurre un cambio
+                elemental, también restaurará 15 pts. de Energía Elemental a
+                todos los personajes con los elementos correspondientes.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <img
+                  src="../imagenes/Pas3_Venti.webp"
+                  alt="Habilidad Pasiva 3"
+                />
+                <strong>Jinete del viento</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Disminuye el consumo de Aguante al planear en un 20%.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2__const">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <h2>Constelaciones</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <img src="../imagenes/Cons1_Venti.webp" alt="Constelacion 1" />
+                <strong>Vendaval feroz</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Dispara 2 flechas adicionales por cada Tiro preciso, infligiendo
+                cada uno 33% del Daño de la flecha original.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                <img src="../imagenes/Cons2_Venti.webp" alt="Constelacion 2" />
+                <strong>Brisa de reminiscencia</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Sonata celestial reduce la RES Anemo del enemigo en un 12%
+                durante 10 s. Los enemigos lanzados al aire por Sonata celestial
+                sufren una reducción adicional del 12% de RES Anemo y de RES
+                física.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                <img src="../imagenes/Cons3_Venti.webp" alt="Constelacion 3" />
+                <strong>Oda a los Mil Vientos</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Aumenta el nivel de habilidad de
+                <strong>Gran Oda del Viento</strong> +3. Puede ser aumentado
+                hasta Niv. 15.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                <img src="../imagenes/Cons4_Venti.webp" alt="Constelacion 4" />
+                <strong>Huracán de la libertad</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Venti obtiene un 25% de Bono de Daño Anemo durante 10 s tras
+                recoger un Orbe Elemental o una Partícula Elemental.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                <img src="../imagenes/Cons5_Venti.webp" alt="Constelacion 5" />
+                <strong>Concierto celestial</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Aumenta el nivel de habilidad de
+                <strong>Sonata celestial</strong> +3. Puede ser aumentado hasta
+                Niv. 15.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                <img src="../imagenes/Cons6_Venti.webp" alt="Constelacion 6" />
+                <strong>Tormenta de desafío</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Gran Oda del Viento reduce la RES Anemo del enemigo en un 20%.
+                Si ocurriera un cambio elemental durante Gran Oda del Viento, la
+                RES Elemental del nuevo atributo se reducirá un 20%.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer__logo">
+        <img src="../imagenes/icon-index.png" alt="logo footer" />
+      </div>
+      <div class="footer__links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./paginas/personajes.html">Personajes</a></li>
+          <li><a href="./paginas/armas.html">Armas</a></li>
+          <li><a href="./paginas/artefactos.html">Artefactos</a></li>
+          <li><a href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h3>Info</h3>
+        <p>Copyright 2023 [Gabriel Taboada]</p>
+        <p>tel: +280 4329972</p>
+        <p>email: gabrieltc96@gmail.com</p>
+      </div>
+      <div class="footer__social">
+        <h3>Redes sociales</h3>
+        <img src="../imagenes/instagram.png" alt="instagram logo" />
+        <img src="../imagenes/twitter.png" alt="twitter logo" />
+        <img src="../imagenes/facebook.png" alt="facebook logo" />
+        <img src="../imagenes/whatsapp.png" alt="whatsapp logo" />
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

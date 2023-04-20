@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personajes</title>
+
     <meta
       name="description"
       content="Personajes de Genshin Impact: descripciones, elementos, presentacion de personaje."
@@ -15,8 +15,16 @@
     />
     <link rel="stylesheet" href="../scss/style.css" />
     <link rel="shorcut icon" href="../imagenes/icon-index.png" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Personajes - Diluc</title>
   </head>
-  <body>
+  <body class="body--diluc">
     <header>
       <nav>
         <ul>
@@ -59,39 +67,53 @@
 
     <div class="opciones">
       <img src="../imagenes/dilucic.webp" alt="icono personaje 1" />
-      <img src="../imagenes/jeanic.webp" alt="icono personaje 2" />
-      <img src="../imagenes/kaeyaic.webp" alt="icono personaje 3" />
-      <img src="../imagenes/monaic.webp" alt="icono personaje 4" />
-      <img src="../imagenes/razoric.webp" alt="icono personaje 5" />
-      <img src="../imagenes/noelleic.webp" alt="icono personaje 6" />
-      <img src="../imagenes/ventiic.webp" alt="icono personaje 7" />
+      <a href="../paginas/jean.html">
+        <img src="../imagenes/jeanic.webp" alt="icono personaje 2" />
+      </a>
+      <a href="../paginas/kaeya.html">
+        <img src="../imagenes/kaeyaic.webp" alt="icono personaje 3" />
+      </a>
+      <a href="../paginas/mona.html">
+        <img src="../imagenes/monaic.webp" alt="icono personaje 4" />
+      </a>
+      <a href="../paginas/razor.html">
+        <img src="../imagenes/razoric.webp" alt="icono personaje 5" />
+      </a>
+      <a href="../paginas/noelle.html">
+        <img src="../imagenes/noelleic.webp" alt="icono personaje 6" />
+      </a>
+      <a href="../paginas/venti.html">
+        <img src="../imagenes/ventiic.webp" alt="icono personaje 7" />
+      </a>
     </div>
 
-    <div class="carta-personaje">
-      <div class="carta-texto">
-        <h3>Diluc</h3>
-        <h4>Héroe Oscuro</h4>
-        <p>★★★★★</p>
-      </div>
-    </div>
-
-    <div class="grid-container2">
-      <div class="foto-personaje">
-        <img src="../imagenes/diluc.webp" alt="aspecto personaje 1" />
+    <div class="container2">
+      <div class="container2__crd container2__crd--diluc crd">
+        <div class="crd crd__txt">
+          <h3>Diluc</h3>
+          <h4>Héroe Oscuro</h4>
+          <p>★★★★★</p>
+        </div>
       </div>
 
-      <div class="video-personaje">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/1TfbiDo7N4k"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="descripcion-personaje">
+      <img
+        src="../imagenes/diluc.webp"
+        alt="aspecto personaje 1"
+        class="container2__img"
+      />
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/1TfbiDo7N4k"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="container2__iframe"
+      ></iframe>
+
+      <div class="container2__description">
         <p>
           Nacido en el acomodado Clan Ragnvindr, es el actual propietario del
           Viñedo del Amanecer y un noble de gran estima en la sociedad de
@@ -100,12 +122,387 @@
           como el rumoreado "Héroe Oscuro".
         </p>
       </div>
+
+      <div class="container2__talent">
+        <div class="accordion" id="accordionExample">
+          <h2>Talentos</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <img src="../imagenes/Atq_Diluc.webp" alt="Ataque Normal" />
+                <strong>Espada Templada</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Ataque Normal:</strong> Realiza hasta 4 tajos rápidos.
+                <strong>Ataque Cargado:</strong> Consume Aguante de manera
+                constante para realizar golpes de espada continuos. Cuando
+                termina el Ataque Cargado, hará un movimiento final de dos
+                cortes con fuerza añadida.
+                <strong>Ataque Descendente:</strong> Se lanza desde el aire para
+                golpear el suelo, dañando a los enemigos cercanos e infligiendo
+                Daño en el AdE en el momento del impacto.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <img
+                  src="../imagenes/Hab_Diluc.webp"
+                  alt="Habilidad Elemental"
+                />
+                <strong>Filo Ardiente</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Da un golpe de espada hacia el frente que inflige Daño Pyro.
+                Esta habilidad puede utilizarse 3 veces consecutivas, pero
+                entrará en TdE si no se activa tras un breve periodo de tiempo.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <img
+                  src="../imagenes/Def_Diluc.webp"
+                  alt="Habilidad Definitiva"
+                />
+                <strong>Amanecer</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Unas llamas emergen de la espada de Diluc, las cuales derriban a
+                los enemigos cercanos e infligen Daño Pyro. Las llamas convergen
+                en la espada, invocando un fénix que vuela hacia adelante e
+                infligiendo Daño Pyro a todos los enemigos en su camino. El
+                fénix explota al llegar a su destino, infligiendo una cantidad
+                significativa de Daño Pyro en el AdE. Las llamas que quedan en
+                el arma de Diluc la imbuyen del elemento Pyro.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <img
+                  src="../imagenes/Pas1_Diluc.webp"
+                  alt="Habilidad Pasiva 1"
+                />
+                <strong>Implacable</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Reduce en un 50% el Coste de Aguante del Ataque Cargado de
+                Diluc, y aumenta en 3 s su duración.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <img
+                  src="../imagenes/Pas2_Diluc.webp"
+                  alt="Habilidad Pasiva 2"
+                />
+                <strong>Bendición del fénix</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                El elemento Pyro imbuido mediante Amanecer se extiende 4 s más.
+                Además, Diluc gana un 20% de Bono de Daño Pyro durante la
+                duración de este efecto.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <img
+                  src="../imagenes/Pas3_Diluc.webp"
+                  alt="Habilidad Pasiva 3"
+                />
+                <strong>Tradición del Caballero del Amanecer</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Recupera el 15% de los minerales utilizados en la fabricación de
+                mandobles.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2__const">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <h2>Constelaciones</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <img src="../imagenes/Cons1_Diluc.webp" alt="Constelacion 1" />
+                <strong>Condena</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Aumenta el daño de Diluc en un 15% contra enemigos con más del
+                50% de Vida.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                <img src="../imagenes/Cons2_Diluc.webp" alt="Constelacion 2" />
+                <strong>Ardor incesante</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Cuando Diluc recibe daño, su ATQ aumenta en un 10% y su Vel. de
+                Ataque aumenta en un 5% durante 10 s. Puede acumularse un máximo
+                de 3 veces, y solo puede ocurrir una vez cada 1.5 s.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                <img src="../imagenes/Cons3_Diluc.webp" alt="Constelacion 3" />
+                <strong>Fuego y acero</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Aumenta el nivel de habilidad de
+                <strong>Filo ardiente</strong> +3. Puede ser aumentado hasta
+                Niv. 15.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                <img src="../imagenes/Cons4_Diluc.webp" alt="Constelacion 4" />
+                <strong>Flujo llameante</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Realizar <strong>Filo ardiente</strong> siguiendo la secuencia
+                de ataques aumenta considerablemente el daño infligido. 2 s
+                después de utilizar Filo ardiente, aumenta el daño del siguiente
+                Filo ardiente en un 40% durante 2 s.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                <img src="../imagenes/Cons5_Diluc.webp" alt="Constelacion 5" />
+                <strong>Fénix, heraldo del amanecer</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Aumenta el nivel de habilidad de <strong>Amanecer</strong> +3.
+                Puede ser aumentado hasta Niv. 15.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                <img src="../imagenes/Cons6_Diluc.webp" alt="Constelacion 6" />
+                <strong>Espada llameante, némesis de la oscuridad</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Después de lanzar <strong>Filo ardiente</strong>, aumenta en un
+                30% el daño y la Vel. de Ataque Normal de los siguientes 2
+                ataques durante 6 s. Además, Filo ardiente no interrumpirá la
+                secuencia de Ataques Normales.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
-      <p>Copyright 2023 [Gabriel Taboada]</p>
-      <p>tel: +280 4329972</p>
-      <p>email: gabrieltc96@gmail.com</p>
+      <div class="footer__logo">
+        <img src="../imagenes/icon-index.png" alt="logo footer" />
+      </div>
+      <div class="footer__links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./paginas/personajes.html">Personajes</a></li>
+          <li><a href="./paginas/armas.html">Armas</a></li>
+          <li><a href="./paginas/artefactos.html">Artefactos</a></li>
+          <li><a href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h3>Info</h3>
+        <p>Copyright 2023 [Gabriel Taboada]</p>
+        <p>tel: +280 4329972</p>
+        <p>email: gabrieltc96@gmail.com</p>
+      </div>
+      <div class="footer__social">
+        <h3>Redes sociales</h3>
+        <img src="../imagenes/instagram.png" alt="instagram logo" />
+        <img src="../imagenes/twitter.png" alt="twitter logo" />
+        <img src="../imagenes/facebook.png" alt="facebook logo" />
+        <img src="../imagenes/whatsapp.png" alt="whatsapp logo" />
+      </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

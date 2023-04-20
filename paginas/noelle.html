@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personajes de Genshin Impact: descripciones, elementos, presentacion de personaje."
+    />
+    <meta
+      name="keywords"
+      content="genshin, impact, armas, artefactos, personajes"
+    />
+    <link rel="stylesheet" href="../scss/style.css" />
+    <link rel="shorcut icon" href="../imagenes/icon-index.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Personajes - Noelle</title>
+  </head>
+  <body class="body--noelle">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./personajes.html">Personajes</a></li>
+          <li><a href="./armas.html">Armas</a></li>
+          <li><a href="./artefactos.html">Artefactos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="titulo2">
+      <h2>Personajes</h2>
+    </div>
+
+    <div class="busqueda">
+      <input type="text" placeholder="Nombre del personaje" />
+      <label for="tipo-de-elemento"></label>
+      <select name="elementos" id="tipo-de-elemento">
+        <option value="1">Anemo</option>
+        <option value="2">Cryo</option>
+        <option value="3">Electro</option>
+        <option value="4">Geo</option>
+        <option value="5">Hydro</option>
+        <option value="6">Pyro</option>
+        <option value="7" selected hidden>Elemento</option>
+      </select>
+
+      <label for="tipo-de-arma"></label>
+      <select name="armas" id="tipo-de-arma">
+        <option value="1">Espada Ligera</option>
+        <option value="2">Lanza</option>
+        <option value="3">Claymore</option>
+        <option value="4">Arco</option>
+        <option value="5">Catalizador</option>
+        <option value="6" selected hidden>Arma Principal</option>
+      </select>
+    </div>
+
+    <div class="opciones">
+      <a href="../paginas/personajes.html">
+        <img src="../imagenes/dilucic.webp" alt="icono personaje 1" />
+      </a>
+      <a href="../paginas/jean.html">
+        <img src="../imagenes/jeanic.webp" alt="icono personaje 2" />
+      </a>
+      <a href="../paginas/kaeya.html">
+        <img src="../imagenes/kaeyaic.webp" alt="icono personaje 3" />
+      </a>
+      <a href="../paginas/mona.html">
+        <img src="../imagenes/monaic.webp" alt="icono personaje 4" />
+      </a>
+      <a href="../paginas/razor.html">
+        <img src="../imagenes/razoric.webp" alt="icono personaje 5" />
+      </a>
+      <img src="../imagenes/noelleic.webp" alt="icono personaje 6" />
+      <a href="../paginas/venti.html">
+        <img src="../imagenes/ventiic.webp" alt="icono personaje 7" />
+      </a>
+    </div>
+
+    <div class="container2">
+      <div class="container2__crd container2__crd--noelle crd">
+        <div class="crd crd__txt">
+          <h3>Noelle</h3>
+          <h4>Flor caballeresca</h4>
+          <p>★★★★</p>
+        </div>
+      </div>
+
+      <img
+        src="../imagenes/Noelle.webp"
+        alt="aspecto personaje 6"
+        class="container2__img"
+      />
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/f24nRnUc-Os"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="container2__iframe"
+      ></iframe>
+
+      <div class="container2__description">
+        <p>
+          Al igual que otros jóvenes de Mondstadt, Noelle sueña en convertirse
+          en una Caballera Honorable de Favonius. Aunque todavía no tiene las
+          cualidades de un caballero, Noelle trabaja dentro de Ordo Favonius
+          como criada, a la vez que estudia con detenimiento cada palabra y cada
+          movimiento de los caballeros.
+        </p>
+      </div>
+
+      <div class="container2__talent">
+        <div class="accordion" id="accordionExample">
+          <h2>Talentos</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <img src="../imagenes/Atq_Noelle.webp" alt="Ataque Normal" />
+                <strong>Técnica de espada Favonius - Criada</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Ataque Normal:</strong> Realiza hasta 4 tajos rápidos.
+                <strong>Ataque Cargado:</strong> Sigue consumiendo Aguante para
+                realizar golpes de espada giratorios contra los enemigos
+                cercanos. Al final del Ataque Cargado, realizará un golpe de
+                espada más poderoso. <strong>Ataque Descendente:</strong> Se
+                lanza desde el aire para golpear el suelo, dañando a los
+                enemigos a lo largo del camino e infligiendo Daño de Área en el
+                momento del impacto.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <img
+                  src="../imagenes/Hab_Noelle.webp"
+                  alt="Habilidad Elemental"
+                />
+                <strong>Guardiana del corazón</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Invoca una armadura de roca la cual inflige Daño Geo en los
+                oponentes alrededor y absorbe el daño. El Daño absorbido aumenta
+                en proporción a la DEF de Noelle. El Escudo tiene los siguientes
+                efectos: • Cuando los Ataques Normales y Ataques Cargados de
+                Noelle golpean un objetivo, hay una posibilidad de regenerar
+                Vida a todos los miembros del equipo. Posee un 250% de
+                eficiencia de absorción contra Daño Geo. La cantidad de Vida
+                curada es proporcional a la DEF de Noelle.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <img
+                  src="../imagenes/Def_Noelle.webp"
+                  alt="Habilidad Definitiva"
+                />
+                <strong>Hora de limpiar</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Al reunir el poder de la roca alrededor de su arma, Noelle
+                golpea a los enemigos que la rodean dentro de un AdE de gran
+                tamaño e inflige Daño Geo. Después, Noelle obtiene los
+                siguientes efectos: 1. Ataque con mayor AdE. 2. Convierte el
+                Daño de ataque en Daño Geo. 3. El incremento del ATQ es
+                proporcional a su DEF.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <img
+                  src="../imagenes/Pas1_Noelle.webp"
+                  alt="Habilidad Pasiva 1"
+                />
+                <strong>De todo corazón</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Cuando Noelle está fuera de escena, si la Vida del personaje
+                activo es inferior al 30%, ocurrirán automáticamente los
+                siguientes efectos: El personaje recibirá inmediatamente un
+                escudo que absorbe el daño equivalente al 400% de DEF de Noelle.
+                Este escudo puede durar hasta 20 s y se puede activar una vez
+                cada 60 s.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <img
+                  src="../imagenes/Pas2_Noelle.webp"
+                  alt="Habilidad Pasiva 2"
+                />
+                <strong>Pulcra y eficaz</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Cuando Noelle inflige daño a los enemigos con ATQ Normal o
+                Cargado, el TdE de Guardiana del corazón se reducirá 1 s cada 4
+                golpes. Infligir daño a varios enemigos al mismo tiempo se
+                considera un solo movimiento de ataque.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <img
+                  src="../imagenes/Pas3_Noelle.webp"
+                  alt="Habilidad Pasiva 3"
+                />
+                <strong>Dedicación de la criada</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Cuando se logra un "Perfecto" en un plato con efectos de
+                defensa, hay un 12% de posibilidades de obtener el doble de
+                cantidad del producto.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2__const">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <h2>Constelaciones</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <img src="../imagenes/Cons1_Noelle.webp" alt="Constelacion 1" />
+                <strong>Yo te cubro</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Al atacar estando al mismo tiempo bajo los efectos de Hora de
+                limpiar y Guardiana del corazón, la probabilidad de restaurar
+                Vida de Guardiana del corazón será del 100%.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                <img src="../imagenes/Cons2_Noelle.webp" alt="Constelacion 2" />
+                <strong>Torbellino de la criada</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Reduce en un 20% el coste de Aguante del Ataque Cargado de
+                Noelle, y aumenta en un 15% el daño infligido con dicho ataque.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                <img src="../imagenes/Cons3_Noelle.webp" alt="Constelacion 3" />
+                <strong>Sin un rasguño</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Aumenta el nivel de habilidad de
+                <strong>Guardiana del corazón</strong> +3. Puede ser aumentado
+                hasta Niv. 15.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                <img src="../imagenes/Cons4_Noelle.webp" alt="Constelacion 4" />
+                <strong>Limpieza obligada</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Cuando termina la duración de
+                <strong>Guardiana del corazón</strong> o el escudo se rompe
+                debido al daño, inflige un 400% de Daño Geo a los enemigos
+                cercanos.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                <img src="../imagenes/Cons5_Noelle.webp" alt="Constelacion 5" />
+                <strong>Experta en limpieza</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Aumenta el nivel de habilidad de
+                <strong>Hora de limpiar</strong> +3. Puede ser aumentado hasta
+                Niv. 15.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                <img src="../imagenes/Cons6_Noelle.webp" alt="Constelacion 6" />
+                <strong>Debe quedar impoluto</strong>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Hora de limpiar aumenta el ATQ de Noelle en un 50% adicional de
+                su DEF. Además, mientras dure la habilidad, su duración se
+                extenderá en 1 s por cada enemigo derrotado (máx. 10 s).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer__logo">
+        <img src="../imagenes/icon-index.png" alt="logo footer" />
+      </div>
+      <div class="footer__links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./paginas/personajes.html">Personajes</a></li>
+          <li><a href="./paginas/armas.html">Armas</a></li>
+          <li><a href="./paginas/artefactos.html">Artefactos</a></li>
+          <li><a href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h3>Info</h3>
+        <p>Copyright 2023 [Gabriel Taboada]</p>
+        <p>tel: +280 4329972</p>
+        <p>email: gabrieltc96@gmail.com</p>
+      </div>
+      <div class="footer__social">
+        <h3>Redes sociales</h3>
+        <img src="../imagenes/instagram.png" alt="instagram logo" />
+        <img src="../imagenes/twitter.png" alt="twitter logo" />
+        <img src="../imagenes/facebook.png" alt="facebook logo" />
+        <img src="../imagenes/whatsapp.png" alt="whatsapp logo" />
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

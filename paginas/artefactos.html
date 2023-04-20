@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artefactos</title>
     <meta
       name="description"
       content="Artefactos de Genshin Impact: descripciones, sets, habilidades, estadísticas."
@@ -15,6 +14,13 @@
     />
     <link rel="stylesheet" href="../scss/style.css" />
     <link rel="shorcut icon" href="../imagenes/icon-index.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Artefactos</title>
   </head>
   <body>
     <header>
@@ -29,34 +35,38 @@
       </nav>
     </header>
 
-    <div class="titulo2">
-      <h2>Artefactos</h2>
-      <p>
-        Los artefactos son elementos en Genshin Impact que se pueden equipar en
-        los personajes para aumentar sus estadísticas.
-      </p>
-      <p>
-        Hay 5 tipos de artefactos que se pueden equipar: Flor de la vida, Pluma
-        de la Muerte, Arenas del Eon, Cáliz de Eonothem y Tiara de Logos. Solo
-        se puede equipar uno de cada tipo en un personaje a la vez.
-      </p>
-      <p>
-        Todos los artefactos tienen un afijo principal, comúnmente conocido como
-        estadística principal, con hasta 4 afijos menores, comúnmente conocidos
-        como subestadísticas o estadísticas secundarias. Estos afijos pueden
-        aumentar considerablemente la fuerza del personaje en combate. Ciertos
-        tipos de artefactos, como la Flor de la vida y la Pluma de la muerte,
-        solo pueden venir con una estadística principal específica, mientras que
-        otros tipos pueden venir con una de muchas estadísticas principales.
-      </p>
-    </div>
-
-    <div class="grid-container4">
-      <div class="nombre-tabla1">
-        <h3>Estadisticas Principales</h3>
+    <div class="container4">
+      <div class="container4__title">
+        <h2>Artefactos</h2>
+        <p>
+          Los artefactos son elementos en Genshin Impact que se pueden equipar
+          en los personajes para aumentar sus estadísticas. Hay 5 tipos de
+          artefactos que se pueden equipar: Flor de la vida, Pluma de la Muerte,
+          Arenas del Eon, Cáliz de Eonothem y Tiara de Logos. Solo se puede
+          equipar uno de cada tipo en un personaje a la vez.
+        </p>
+        <p>
+          Todos los artefactos tienen un afijo principal, comúnmente conocido
+          como estadística principal, con hasta 4 afijos menores, comúnmente
+          conocidos como subestadísticas o estadísticas secundarias. Estos
+          afijos pueden aumentar considerablemente la fuerza del personaje en
+          combate. Ciertos tipos de artefactos, como la Flor de la vida y la
+          Pluma de la muerte, solo pueden venir con una estadística principal
+          específica, mientras que otros tipos pueden venir con una de muchas
+          estadísticas principales.
+        </p>
       </div>
 
-      <div class="tabla-estprin">
+      <div class="container4__nametbl1">
+        <h3>Estadisticas Principales</h3>
+        <p>
+          Cada artefacto tiene una estadística principal, determinada por el
+          tipo o posición del artefacto. Su valor inicial está determinado por
+          la rareza del artefacto.
+        </p>
+      </div>
+
+      <div class="container4__tbl1">
         <table>
           <tr>
             <th>Conjunto</th>
@@ -91,41 +101,294 @@
         </table>
       </div>
 
-      <div class="stats">
-        <select name="estadisticas" id="est">
-          <option value="1">Vida y Vida%</option>
-          <option value="2">Atk y Atk%</option>
-          <option value="3">Def y Def%</option>
-          <option value="4" selected>Maestria Elemental</option>
-          <option value="5">Recarga de Energia</option>
-          <option value="6">Bono Elemental</option>
-          <option value="7">Daño Crit.</option>
-          <option value="8">Prob. Crit.</option>
-        </select>
+      <div class="container4__stats">
+        <div class="accordion" id="accordionExample">
+          <h3>Estadísticas</h3>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Vida y Vida %
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                La Vida aumenta una cantidad de vida máxima a la vida total de
+                tu personaje. Mientras más vida tengas más golpes podrás
+                aguantar. La Vida % aumenta una cantidad de vida porcentual a la
+                vida base de tu personaje.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Ataque y Ataque %
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                El Ataque Base se trata del ataque que tiene nuestro personaje
+                sin tener en cuenta ningún bonificador. El Ataque % aumenta una
+                cantidad porcentual al ataque de tu personaje, que se constituye
+                del Arma+Ataque base de tu personaje. El ATQ aumentará el daño
+                que hacen nuestros personajes y aunque pueda quizás dar a
+                entender que solo aplica al daño físico como tal, no es así,
+                afecta a absolutamente todo el daño. Aplica por lo tanto también
+                a daño elemental, habilidades y demás.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Defensa y Defensa %
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                La DEF o Defensa reducirá el daño que reciba nuestro personaje,
+                y al igual que ocurre con el ATK; afecta a todos los tipos de
+                daño, ya sea de procedencia elemental o física. La Defensa %
+                Aumenta una cantidad porcentual a la defensa base de tu
+                personaje.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Probabilidad de Crítico
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Probabilidad de golpe crítico mide la frecuencia con la que un
+                personaje podrá infligir un golpe crítico. Un porcentaje más
+                alto significa una mayor probabilidad de que los ataques se
+                vuelvan críticos.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Daño Crítico
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Daño crítico determina cuánto daño adicional infligirá el
+                personaje cuando se active un golpe crítico. Un porcentaje más
+                alto significa más daño adicional.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                Recarga de Energía
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Aumenta la cantidad de Energía que recibe tu personaje por
+                recoger partículas elementales (generadas al derrotar enemigos,
+                asestar golpes críticos, utilizar habilidades elementales y al
+                realizar reacciones elementales). La Energía te permite utilizar
+                tu habilidad Definitiva.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                Maestria Elemental
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                La Maestría Elemental es un atributo que aumenta la potencia de
+                las Reacciones elementales creadas por tu personaje. Estas
+                reacciones son Vaporización, Derretido, Sobrecarga,
+                Superconductor, Electrocargado, Quemadura, Rompehielo,
+                Torbellino y Cristalización. La fuerza de la reacción se escala
+                en función de la Maestría Elemental del personaje que aplica el
+                último elemento.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                Bono Elemental
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Aumenta el daño y la resistencia del elemento correspondiente
+                que tendrá tu personaje. Hay una estadística tanto de
+                bonificación del daño como de resistencia por cada tipo de daño
+                elemental: Pyro, Hydro, Dendro, Electro, Anemo, Cryo, Geo y
+                Físico.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="descripcion-stat">
+      <div class="container4__nametbl2">
+        <h3>Estadisticas Secundarias</h3>
         <p>
-          La Maestría Elemental es un atributo que aumenta la potencia de las
-          Reacciones elementales creadas por tu personaje. Estas reacciones son
-          Vaporización, Derretido, Sobrecarga, Superconductor, Electrocargado,
-          Quemadura, Rompehielo, Torbellino y Cristalización. La fuerza de la
-          reacción se escala en función de la Maestría Elemental del personaje
-          que aplica el último elemento.
+          Junto con las estadísticas secundarias, los artefactos puden tener
+          hasta 4 estadísticas secundarias o sub-stats. Cada 4 niveles, un
+          artefacto gana una nueva estadística secundaria si tiene menos de 4, o
+          mejora una de las que ya tiene si posee 4. Las estadísticas
+          secundarias no pueden ser del mismo tipo que la estadística principal.
         </p>
       </div>
 
-      <div class="nombre-tabla2">
-        <h3>Estadisticas Secundarias</h3>
-      </div>
-
-      <div class="tabla-estsec">
+      <div class="container4__tbl2">
         <table>
           <tr>
-            <th>Estadistica</th>
-            <th>3 Estrellas</th>
-            <th>4 Estrellas</th>
-            <th>5 Estrellas</th>
+            <th>Rareza</th>
+            <th>Nivel Maximo</th>
+            <th>N° Substats</th>
+            <th>N° de Desbloqueos</th>
+            <th>N° de Mejoras</th>
+          </tr>
+          <tr>
+            <td>★</td>
+            <td>4</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>★★</td>
+            <td>4</td>
+            <td>0~1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>★★★</td>
+            <td>12</td>
+            <td>1~2</td>
+            <td>2~3</td>
+            <td>0~1</td>
+          </tr>
+          <tr>
+            <td>★★★★</td>
+            <td>16</td>
+            <td>2~3</td>
+            <td>1~2</td>
+            <td>2~3</td>
+          </tr>
+          <tr>
+            <td>★★★★★</td>
+            <td>20</td>
+            <td>3~4</td>
+            <td>0~1</td>
+            <td>4~5</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="container4__tbl3">
+        <table>
+          <tr>
+            <th>Estadística</th>
+            <th>★★★</th>
+            <th>★★★★</th>
+            <th>★★★★★</th>
           </tr>
           <tr>
             <td>Vida</td>
@@ -172,32 +435,370 @@
         </table>
       </div>
 
-      <div class="name-art">
-        <select name="set-artefacto" id="set-art" class="sel">
-          <option value="1" selected>Final del Gladiador</option>
-          <option value="2">Aventurero</option>
-          <option value="3">Afortunado</option>
-          <option value="4">Instructor</option>
-          <option value="5">Berserker</option>
-          <option value="6">Ritual Antiguo de la Nobleza</option>
-          <option value="7">Orquesta del Errante</option>
-        </select>
+      <div class="container4__namemodals">
+        <h2>Lista de Artefactos</h2>
       </div>
 
-      <div class="artefacto">
-        <img src="../imagenes/artefacto1.webp" alt="set de artefacto 1" />
-        <p>2 piezas: ATQ +18%.</p>
-        <p>
-          4 piezas: Aumenta el daño de Ataque Normal en un 35% si el personaje
-          usa una espada ligera, mandoble o lanza.
-        </p>
+      <div class="container4__modals">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Gladiador
+          <img src="../imagenes/flor-gladiador.webp" alt="imagen boton 1" />
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Set del Final del Gladiador
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="../imagenes/Artefacto_Gladiador.webp"
+                  alt="set de artefacto 1"
+                />
+                <p>2 piezas: ATQ +18%.</p>
+                <p>
+                  4 piezas: Aumenta el daño de Ataque Normal en un 35% si el
+                  personaje usa una espada ligera, mandoble o lanza.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal2"
+        >
+          Aventurero
+          <img src="../imagenes/flor-aventurero.webp" alt="imagen boton 2" />
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel2"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel2">
+                  Set del Aventurero
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="../imagenes/Artefacto_Aventurero.webp"
+                  alt="set de artefacto 2"
+                />
+                <p>2 piezas: DEF +100.</p>
+                <p>4 piezas: Recoger Mora restaura 300 de vida.</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal3"
+        >
+          Instructor
+          <img src="../imagenes/flor-instructor.webp" alt="imagen boton 3" />
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal3"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel3"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel3">
+                  Set del Instructor
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="../imagenes/Artefacto_Instructor.webp"
+                  alt="set de artefacto 3"
+                />
+                <p>2 piezas: Maestría Elemental +80</p>
+                <p>
+                  4 piezas: Después de activar una Reacción Elemental, aumenta
+                  la Maestría Elemental de todos los miembros del equipo en 120
+                  pts. durante 8 s.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal4"
+        >
+          Berserker
+          <img src="../imagenes/flor-berserker.webp" alt="imagen boton 4" />
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal4"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel4"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel4">
+                  Set del Berserker
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="../imagenes/Artefacto_Berserker.webp"
+                  alt="set de artefacto 4"
+                />
+                <p>2 piezas: Prob. Critica +12%</p>
+                <p>
+                  4 piezas: Cuando la Vida es menor al 70%, aumenta la Prob.
+                  Critica un 24%.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal5"
+        >
+          Nobleza
+          <img src="../imagenes/flor-nobleza.webp" alt="imagen boton 5" />
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal5"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel5"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel5">
+                  Set del Ritual Antiguo de la Nobleza
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="../imagenes/Artefacto_Nobleza.webp"
+                  alt="set de artefacto 5"
+                />
+                <p>2 piezas: Daño de Habilidad Definitiva +20%.</p>
+                <p>
+                  4 piezas: Después de lanzar una Habilidad Definitiva, aumenta
+                  el ATQ de todos los miembros del equipo en un 20% durante 12
+                  s. Este efecto no puede acumularse.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal6"
+        >
+          Orquesta
+          <img src="../imagenes/flor-orquesta.webp" alt="imagen boton 6" />
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal6"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel6"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel6">
+                  Set de Orquesta del Errante
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="../imagenes/Artefacto_Orquesta.webp"
+                  alt="set de artefacto 6"
+                />
+                <p>2 piezas: Maestría Elemental +80</p>
+                <p>
+                  4 piezas: Aumenta el daño de ATQ Cargado en un 35% si el
+                  personaje usa catalizador o arco.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <footer>
-      <p>Copyright 2023 [Gabriel Taboada]</p>
-      <p>tel: +280 4329972</p>
-      <p>email: gabrieltc96@gmail.com</p>
+      <div class="footer__logo">
+        <img src="../imagenes/icon-index.png" alt="logo footer" />
+      </div>
+      <div class="footer__links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./paginas/personajes.html">Personajes</a></li>
+          <li><a href="./paginas/armas.html">Armas</a></li>
+          <li><a href="./paginas/artefactos.html">Artefactos</a></li>
+          <li><a href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h3>Info</h3>
+        <p>Copyright 2023 [Gabriel Taboada]</p>
+        <p>tel: +280 4329972</p>
+        <p>email: gabrieltc96@gmail.com</p>
+      </div>
+      <div class="footer__social">
+        <h3>Redes sociales</h3>
+        <img src="../imagenes/instagram.png" alt="instagram logo" />
+        <img src="../imagenes/twitter.png" alt="twitter logo" />
+        <img src="../imagenes/facebook.png" alt="facebook logo" />
+        <img src="../imagenes/whatsapp.png" alt="whatsapp logo" />
+      </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

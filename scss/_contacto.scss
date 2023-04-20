@@ -1,59 +1,105 @@
-.grid-container5 {
+.container5 {
   display: grid;
-  grid-template-rows: 150px 50px 400px;
-  grid-template-columns: 850px auto;
-}
-
-.titulo3 {
-  text-align: start;
-  width: 750px;
-  height: 100px;
-  background: url(../imagenes/contactanos.webp);
-  margin: 10px;
-  border-radius: 5px;
-  border: solid black;
-}
-
-.mensajecont {
-  font-size: large;
-  font-weight: bold;
-  margin: 10px;
-  grid-row: 2/3;
-}
-
-.formulario {
-  grid-row: 3/4;
-  div {
+  grid-template-areas:
+    "crd crd"
+    "msj msj"
+    "form img"
+    "form img"
+    "form img"
+    "link iframe"
+    "link iframe";
+  justify-content: space-around;
+  gap: 10px;
+  .container5__title {
+    grid-area: crd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 100px;
+    background: url(../imagenes/contactanos.webp);
     margin: 10px;
-    textarea {
-      width: 500px;
+    border-radius: 5px;
+    border: solid black;
+  }
+  .container5__msj {
+    grid-area: msj;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .container5__form {
+    grid-area: form;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+      margin: 10px;
+      textarea {
+        width: 500px;
+      }
+    }
+    form {
+      &:hover {
+        background-color: #d90427e3;
+        color: beige;
+        font-weight: bold;
+        max-width: fit-content;
+        max-height: fit-content;
+        border-radius: 5px;
+      }
     }
   }
-  form {
-    &:hover {
-      background-color: #d90427e3;
-      color: beige;
-      font-weight: bold;
-      max-width: fit-content;
-      max-height: fit-content;
+
+  .container5__img {
+    grid-area: img;
+    justify-self: center;
+    img {
+      width: 500px;
+      height: auto;
+      border-radius: 50px;
+      box-shadow: 5px 5px black;
+      grid-row: 2/4;
+      grid-column: 2/3;
+      &:hover {
+        box-shadow: 5px 5px red;
+      }
+    }
+  }
+
+  .container5__iframe {
+    grid-area: iframe;
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      color: rgb(82, 19, 230);
+    }
+    iframe {
+      width: 700px;
+      height: 500px;
+      margin: 10px;
       border-radius: 5px;
     }
   }
-}
 
-.bennett {
-  grid-row: 2/4;
-  grid-column: 2/3;
-  justify-self: center;
-  img {
-    width: 500px;
-    height: auto;
-    border-radius: 50px;
-    box-shadow: 5px 5px black;
-    grid-row: 2/4;
-    grid-column: 2/3;
-    &:hover {
-      box-shadow: 5px 5px red;
+  .container5__links {
+    li {
+      list-style: disc;
+      margin: 50px;
+      a {
+        font-size: larger;
+        &:visited {
+          color: black;
+        }
+        &:hover {
+          color: rgb(82, 19, 230);
+        }
+        h3 {
+          font-size: larger;
+          font-style: oblique;
+        }
+      }
     }
   }
 }
