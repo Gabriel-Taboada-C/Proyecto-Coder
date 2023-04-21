@@ -1,3 +1,25 @@
+/* Mixin y Variables */
+@mixin descripcion {
+  font-size: large;
+  max-width: auto;
+  text-indent: 5mm;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+$colores: (
+  anemo: rgb(21, 143, 21),
+  cryo: rgb(38, 216, 216),
+  electro: rgb(109, 4, 179),
+  geo: rgb(243, 243, 46),
+  hydro: rgb(29, 75, 228),
+  pyro: rgb(145, 9, 9),
+);
+
 .busqueda {
   margin: 30px;
 }
@@ -35,9 +57,6 @@
     border-radius: 5px;
     border: solid black;
     margin-top: 10px;
-  }
-  .container2__crd--diluc {
-    background: url(../imagenes/cartadiluc.jpg);
   }
   .crd__txt {
     h3 {
@@ -82,16 +101,7 @@
   .container2__description {
     margin: 10px;
     padding: 10px;
-    font-size: large;
-    max-width: auto;
-    text-indent: 5mm;
-    grid-row: 3/4;
-    grid-column: 2/3;
-    background-color: rgba(143, 48, 48, 0.9);
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
-    font-style: oblique;
-    font-weight: bolder;
+    @include descripcion;
   }
   .container2__talent {
     grid-row: 4/5;
@@ -116,5 +126,209 @@
       width: auto;
       margin-right: 50px;
     }
+  }
+}
+
+/* Fondo de pantalla */
+
+.body--diluc {
+  background: url(../imagenes/Fondo_Diluc.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.body--jean {
+  background: url(../imagenes/Fondo_Jean.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.body--kaeya {
+  background: url(../imagenes/Fondo_Kaeya.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.body--mona {
+  background: url(../imagenes/Fondo_Mona.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.body--razor {
+  background: url(../imagenes/Fondo_Razor.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.body--noelle {
+  background: url(../imagenes/Fondo_Noelle.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.body--venti {
+  background: url(../imagenes/Fondo_Venti.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+/* Carta de Personaje */
+.container2__crd--diluc {
+  background: url(../imagenes/cartadiluc.jpg);
+}
+
+.container2__crd--jean {
+  background: url(../imagenes/cartaelegia.jpg);
+}
+.container2__crd--kaeya {
+  background: url(../imagenes/cartakaeya.jpg);
+}
+.container2__crd--mona {
+  background: url(../imagenes/cartamona.webp);
+}
+.container2__crd--razor {
+  background: url(../imagenes/cartarazor.webp);
+}
+.container2__crd--noelle {
+  background: url(../imagenes/cartanoelle.jpg);
+  background-size: 900px;
+  background-position: 50%;
+}
+.container2__crd--venti {
+  background: url(../imagenes/cartaventi.webp);
+}
+
+/* Estilo h2 */
+
+.titulo2--diluc {
+  color: map-get($colores, pyro);
+}
+.titulo2--jean {
+  color: map-get($colores, anemo);
+}
+.titulo2--kaeya {
+  color: map-get($colores, cryo);
+}
+.titulo2--mona {
+  color: map-get($colores, hydro);
+}
+.titulo2--razor {
+  color: map-get($colores, electro);
+}
+.titulo2--noelle {
+  color: map-get($colores, geo);
+}
+.titulo2--venti {
+  color: map-get($colores, anemo);
+}
+
+/* Descripcion del Personaje */
+
+.container2__description--diluc {
+  background-color: map-get($colores, pyro);
+}
+.container2__description--jean {
+  background-color: map-get($colores, anemo);
+}
+.container2__description--kaeya {
+  background-color: map-get($colores, cryo);
+}
+.container2__description--mona {
+  background-color: map-get($colores, hydro);
+}
+.container2__description--razor {
+  background-color: map-get($colores, electro);
+}
+.container2__description--noelle {
+  background-color: map-get($colores, geo);
+}
+.container2__description--venti {
+  background-color: map-get($colores, anemo);
+}
+
+.container2__talent {
+  .h3--diluc {
+    font-size: 40px;
+    color: map-get($colores, pyro);
+  }
+}
+.container2__const {
+  .h3--diluc {
+    font-size: 40px;
+    color: map-get($colores, pyro);
+  }
+}
+.container2__talent {
+  .h3--jean {
+    font-size: 40px;
+    color: map-get($colores, anemo);
+  }
+}
+.container2__const {
+  .h3--jean {
+    font-size: 40px;
+    color: map-get($colores, anemo);
+  }
+}
+.container2__talent {
+  .h3--kaeya {
+    font-size: 40px;
+    color: map-get($colores, cryo);
+  }
+}
+.container2__const {
+  .h3--kaeya {
+    font-size: 40px;
+    color: map-get($colores, cryo);
+  }
+}
+.container2__talent {
+  .h3--mona {
+    font-size: 40px;
+    color: map-get($colores, hydro);
+  }
+}
+.container2__const {
+  .h3--mona {
+    font-size: 40px;
+    color: map-get($colores, hydro);
+  }
+}
+.container2__talent {
+  .h3--razor {
+    font-size: 40px;
+    color: map-get($colores, electro);
+  }
+}
+.container2__const {
+  .h3--razor {
+    font-size: 40px;
+    color: map-get($colores, electro);
+  }
+}
+.container2__talent {
+  .h3--noelle {
+    font-size: 40px;
+    color: map-get($colores, geo);
+  }
+}
+.container2__const {
+  .h3--noelle {
+    font-size: 40px;
+    color: map-get($colores, geo);
+  }
+}
+.container2__talent {
+  .h3--venti {
+    font-size: 40px;
+    color: map-get($colores, anemo);
+  }
+}
+.container2__const {
+  .h3--venti {
+    font-size: 40px;
+    color: map-get($colores, anemo);
   }
 }
