@@ -560,43 +560,49 @@ footer {
     grid-template-columns: auto;
     justify-items: center;
     align-items: center;
+    justify-content: start;
   }
   .container4 .container4__title {
     grid-row: 1/2;
     grid-column: 1/2;
-    max-width: 450px;
+    max-width: 300px;
   }
 
   .container4 .container4__nametbl1 {
     grid-row: 2/3;
     grid-column: 1/2;
-    max-width: 450px;
+    max-width: 300px;
   }
   .container4 .container4__tbl1 {
     grid-row: 3/4;
     grid-column: 1/2;
-    max-width: 450px;
+    max-width: 300px;
+  }
+  .container4 .container4__tbl1 table {
+    margin: 0;
   }
   .container4 .container4__stats {
     grid-row: 4/5;
     grid-column: 1/2;
-    max-width: 450px;
+    max-width: 300px;
   }
   .container4 .container4__nametbl2 {
     grid-row: 5/6;
     grid-column: 1/2;
-    max-width: 450px;
+    max-width: 300px;
   }
   .container4 .container4__tbl2 {
     grid-row: 6/7;
     grid-column: 1/2;
-    max-width: 450px;
-    justify-self: left;
+    max-width: 300px;
+  }
+  .container4 .container4__tbl2 table {
+    margin: 0;
   }
   .container4 .container4__tbl3 {
     grid-row: 7/8;
     grid-column: 1/2;
-    max-width: 450px;
+    max-width: 300px;
   }
   .container4 .container4__namemodals {
     grid-row: 8/9;
@@ -606,7 +612,8 @@ footer {
     grid-row: 9/11;
     grid-column: 1/2;
     flex-wrap: wrap;
-    max-width: 450px;
+    max-width: 300px;
+    justify-content: space-between;
   }
 
   .container4 .container4__modals button img {
@@ -620,17 +627,18 @@ footer {
     grid-template-columns: repeat(8, auto);
     grid-template-columns: auto;
     gap: 10px;
+    justify-content: start;
   }
   .container5 .container5__title {
     grid-row: 1/2;
     grid-column: 1/2;
-    max-width: 450px;
-    margin-left: 20px;
+    max-width: 350px;
+    margin-left: 10px;
   }
   .container5 .container5__msj {
     grid-row: 2/3;
     grid-column: 1/2;
-    max-width: 450px;
+    max-width: 350px;
     margin-left: 30px;
   }
   .container5 .container5__form {
@@ -639,7 +647,8 @@ footer {
     justify-self: center;
   }
   .container5 .container5__form textarea {
-    max-width: 420px;
+    max-width: 350px;
+    margin-left: 0;
   }
 
   .container5 .container5__img {
@@ -653,20 +662,20 @@ footer {
     box-shadow: 5px 5px black;
     grid-row: 5/6;
     grid-column: 1/2;
-    max-width: 450px;
+    max-width: 350px;
   }
   .container5 .container5__iframe {
     grid-row: 6/7;
     grid-column: 1/2;
-    margin-left: 20px;
-    max-width: 450px;
+    margin-left: 10px;
+    max-width: 350px;
   }
   .container5 .container5__iframe iframe {
     width: 400px;
     height: 400px;
     margin: 10px;
     border-radius: 5px;
-    max-width: 450px;
+    max-width: 350px;
   }
   .container5 .container5__links {
     grid-row: 7/8;
